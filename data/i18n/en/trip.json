@@ -1,0 +1,13 @@
+{
+  "_review": "source",
+  "trip.understood": "I understood: you landed from {origin} and need a flight to {destination}.",
+  "trip.not_live": "Live flight lookups are not switched on, so I cannot check those flights. Pick your flights from today's schedule.",
+  "trip.none_in": "I could not find a matching flight from {origin} into Dubai today.",
+  "trip.none_out": "I could not find a matching flight from Dubai to {destination} today.",
+  "trip.inbound": "{flight} from {origin}: {status}, scheduled {time}, terminal {terminal}.",
+  "trip.inbound_gate": "{flight} from {origin}: {status}, scheduled {time}, terminal {terminal}, gate {gate}.",
+  "trip.outbound": "{flight} to {destination} departs {time} from terminal {terminal}. The gate is not assigned yet.",
+  "trip.outbound_gate": "{flight} to {destination} departs {time} from terminal {terminal}, gate {gate}.",
+  "trip.pick": "Which of these is yours? Tell me the flight number and I will check the gate and the way there.",
+  "trip.status_unknown": "status not published yet"
+}

@@ -1,0 +1,791 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$defs": {
+    "AirportCode": {
+      "pattern": "^[A-Z]{3}$",
+      "type": "string"
+    },
+    "AmenityObservation": {
+      "additionalProperties": false,
+      "properties": {
+        "source": {
+          "$ref": "#/$defs/Id"
+        },
+        "observed_at": {
+          "$ref": "#/$defs/UTCInstant"
+        },
+        "valid_until": {
+          "$ref": "#/$defs/UTCInstant"
+        },
+        "airport": {
+          "$ref": "#/$defs/AirportCode"
+        },
+        "node_id": {
+          "$ref": "#/$defs/Id"
+        },
+        "open": {
+          "anyOf": [
+            {
+              "type": "boolean"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Open"
+        }
+      },
+      "required": [
+        "source",
+        "observed_at",
+        "valid_until",
+        "airport",
+        "node_id",
+        "open"
+      ],
+      "title": "AmenityObservation",
+      "type": "object"
+    },
+    "Decision": {
+      "additionalProperties": false,
+      "properties": {
+        "event_id": {
+          "$ref": "#/$defs/Id"
+        },
+        "case_id": {
+          "$ref": "#/$defs/Id"
+        },
+        "request_revision": {
+          "$ref": "#/$defs/NonNegativeInt"
+        },
+        "decision": {
+          "$ref": "#/$defs/DecisionKind"
+        },
+        "reason_code": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/ReasonCode"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        }
+      },
+      "required": [
+        "event_id",
+        "case_id",
+        "request_revision",
+        "decision"
+      ],
+      "title": "Decision",
+      "type": "object"
+    },
+    "DecisionKind": {
+      "enum": [
+        "approve",
+        "decline"
+      ],
+      "title": "DecisionKind",
+      "type": "string"
+    },
+    "DispatchState": {
+      "enum": [
+        "unknown",
+        "dispatched",
+        "completed"
+      ],
+      "title": "DispatchState",
+      "type": "string"
+    },
+    "DispatchStatusRequest": {
+      "additionalProperties": false,
+      "properties": {
+        "event_id": {
+          "$ref": "#/$defs/Id"
+        },
+        "case_id": {
+          "$ref": "#/$defs/Id"
+        },
+        "request_revision": {
+          "$ref": "#/$defs/NonNegativeInt"
+        },
+        "status": {
+          "$ref": "#/$defs/DispatchState"
+        },
+        "evidence": {
+          "$ref": "#/$defs/SourceStamp"
+        },
+        "provider_ref": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/Id"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "eta": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/SecondsRange"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        }
+      },
+      "required": [
+        "event_id",
+        "case_id",
+        "request_revision",
+        "status",
+        "evidence"
+      ],
+      "title": "DispatchStatusRequest",
+      "type": "object"
+    },
+    "EventType": {
+      "enum": [
+        "passenger_input",
+        "flight_updated",
+        "gate_changed",
+        "facility_changed",
+        "refresh_due",
+        "coordinator_decided",
+        "dispatch_status"
+      ],
+      "title": "EventType",
+      "type": "string"
+    },
+    "Id": {
+      "maxLength": 128,
+      "minLength": 1,
+      "type": "string"
+    },
+    "Intent": {
+      "enum": [
+        "check_connection",
+        "find_gate",
+        "find_amenity",
+        "request_assistance",
+        "arrival_estimates",
+        "unknown"
+      ],
+      "title": "Intent",
+      "type": "string"
+    },
+    "JourneyInputRequest": {
+      "additionalProperties": false,
+      "properties": {
+        "journey_id": {
+          "$ref": "#/$defs/Id"
+        },
+        "client_input_id": {
+          "$ref": "#/$defs/Id"
+        },
+        "known_revision": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/NonNegativeInt"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "intent": {
+          "$ref": "#/$defs/Intent",
+          "default": "unknown"
+        },
+        "text": {
+          "anyOf": [
+            {
+              "maxLength": 2000,
+              "minLength": 1,
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Text"
+        },
+        "flight_aliases": {
+          "default": [],
+          "items": {
+            "$ref": "#/$defs/Id"
+          },
+          "title": "Flight Aliases",
+          "type": "array"
+        },
+        "operation_date": {
+          "anyOf": [
+            {
+              "format": "date",
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Operation Date"
+        },
+        "inbound_leg_id": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/Id"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "outbound_leg_id": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/Id"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "landmark_text": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/Id"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "confirmed_origin_id": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/Id"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "language": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/Id"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "party_needs": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/PartyNeeds"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        }
+      },
+      "required": [
+        "journey_id",
+        "client_input_id"
+      ],
+      "title": "JourneyInputRequest",
+      "type": "object"
+    },
+    "JsonValue": {},
+    "NonNegativeInt": {
+      "minimum": 0,
+      "type": "integer"
+    },
+    "Observation": {
+      "additionalProperties": false,
+      "properties": {
+        "source": {
+          "$ref": "#/$defs/Id"
+        },
+        "observed_at": {
+          "$ref": "#/$defs/UTCInstant"
+        },
+        "valid_until": {
+          "$ref": "#/$defs/UTCInstant"
+        },
+        "leg_id": {
+          "$ref": "#/$defs/Id"
+        },
+        "field": {
+          "$ref": "#/$defs/ObservationField"
+        },
+        "value": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/UTCInstant"
+            },
+            {
+              "$ref": "#/$defs/JsonValue"
+            }
+          ],
+          "default": null,
+          "title": "Value"
+        },
+        "authority_rank": {
+          "$ref": "#/$defs/NonNegativeInt"
+        },
+        "received_at": {
+          "$ref": "#/$defs/UTCInstant"
+        },
+        "scheduled": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/UTCInstant"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "estimated": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/UTCInstant"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "actual": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/UTCInstant"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "withdrawn": {
+          "default": false,
+          "title": "Withdrawn",
+          "type": "boolean"
+        },
+        "cutoff_estimated": {
+          "default": false,
+          "title": "Cutoff Estimated",
+          "type": "boolean"
+        }
+      },
+      "required": [
+        "source",
+        "observed_at",
+        "valid_until",
+        "leg_id",
+        "field",
+        "authority_rank",
+        "received_at"
+      ],
+      "title": "Observation",
+      "type": "object"
+    },
+    "ObservationField": {
+      "enum": [
+        "gate",
+        "terminal",
+        "concourse",
+        "level",
+        "status",
+        "departure",
+        "arrival",
+        "boarding_cutoff",
+        "carousel"
+      ],
+      "title": "ObservationField",
+      "type": "string"
+    },
+    "Overlay": {
+      "additionalProperties": false,
+      "properties": {
+        "source": {
+          "$ref": "#/$defs/Id"
+        },
+        "observed_at": {
+          "$ref": "#/$defs/UTCInstant"
+        },
+        "valid_until": {
+          "$ref": "#/$defs/UTCInstant"
+        },
+        "id": {
+          "$ref": "#/$defs/Id"
+        },
+        "airport": {
+          "$ref": "#/$defs/AirportCode"
+        },
+        "edge_id": {
+          "$ref": "#/$defs/Id"
+        },
+        "closed": {
+          "anyOf": [
+            {
+              "type": "boolean"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Closed"
+        },
+        "accessible": {
+          "anyOf": [
+            {
+              "type": "boolean"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Accessible"
+        }
+      },
+      "required": [
+        "source",
+        "observed_at",
+        "valid_until",
+        "id",
+        "airport",
+        "edge_id"
+      ],
+      "title": "Overlay",
+      "type": "object"
+    },
+    "PartyNeeds": {
+      "additionalProperties": false,
+      "properties": {
+        "party_size": {
+          "default": 1,
+          "minimum": 1,
+          "title": "Party Size",
+          "type": "integer"
+        },
+        "children": {
+          "$ref": "#/$defs/NonNegativeInt",
+          "default": 0
+        },
+        "step_free": {
+          "default": false,
+          "title": "Step Free",
+          "type": "boolean"
+        },
+        "wheelchair": {
+          "default": false,
+          "title": "Wheelchair",
+          "type": "boolean"
+        }
+      },
+      "title": "PartyNeeds",
+      "type": "object"
+    },
+    "PassengerFlow": {
+      "enum": [
+        "connecting",
+        "exiting",
+        "departing"
+      ],
+      "title": "PassengerFlow",
+      "type": "string"
+    },
+    "QueueObservation": {
+      "additionalProperties": false,
+      "properties": {
+        "source": {
+          "$ref": "#/$defs/Id"
+        },
+        "observed_at": {
+          "$ref": "#/$defs/UTCInstant"
+        },
+        "valid_until": {
+          "$ref": "#/$defs/UTCInstant"
+        },
+        "airport": {
+          "$ref": "#/$defs/AirportCode"
+        },
+        "queue_id": {
+          "$ref": "#/$defs/Id"
+        },
+        "flow": {
+          "$ref": "#/$defs/PassengerFlow"
+        },
+        "wait": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/SecondsRange"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        }
+      },
+      "required": [
+        "source",
+        "observed_at",
+        "valid_until",
+        "airport",
+        "queue_id",
+        "flow",
+        "wait"
+      ],
+      "title": "QueueObservation",
+      "type": "object"
+    },
+    "ReadinessEvent": {
+      "additionalProperties": false,
+      "properties": {
+        "source": {
+          "$ref": "#/$defs/Id"
+        },
+        "observed_at": {
+          "$ref": "#/$defs/UTCInstant"
+        },
+        "leg_id": {
+          "$ref": "#/$defs/Id"
+        },
+        "state": {
+          "$ref": "#/$defs/ReadinessState"
+        },
+        "ready": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/SecondsRange"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        }
+      },
+      "required": [
+        "source",
+        "observed_at",
+        "leg_id",
+        "state"
+      ],
+      "title": "ReadinessEvent",
+      "type": "object"
+    },
+    "ReadinessState": {
+      "enum": [
+        "parked",
+        "doors_open",
+        "ready_to_move",
+        "staff_handoff_pending",
+        "mobility_dispatched"
+      ],
+      "title": "ReadinessState",
+      "type": "string"
+    },
+    "ReasonCode": {
+      "enum": [
+        "FLIGHT_UNKNOWN",
+        "FLIGHT_CANCELLED",
+        "AMBIGUOUS_FLIGHT",
+        "AMBIGUOUS_LANDMARK",
+        "AMBIGUOUS_DATE",
+        "AMBIGUOUS_PICKUP",
+        "GATE_STALE",
+        "GATE_CONFLICT",
+        "GATE_UNKNOWN",
+        "GATE_CHANGED",
+        "CUTOFF_MISSING",
+        "CUTOFF_STALE",
+        "CUTOFF_CONFLICT",
+        "CUTOFF_ESTIMATED",
+        "CUTOFF_PASSED",
+        "TIGHT_MARGIN",
+        "NEGATIVE_MARGIN",
+        "LOWER_BOUND_EXCEEDS_CUTOFF",
+        "QUEUE_BOUND_STALE",
+        "QUEUE_BOUND_MISSING",
+        "QUEUE_BOUND_CONFLICT",
+        "LOCATION_UNKNOWN",
+        "LOCATION_UNCONFIRMED",
+        "MAP_UNAVAILABLE",
+        "FACILITY_CLOSED",
+        "FACILITY_STALE",
+        "LIFT_CLOSED",
+        "LIFT_UNVERIFIED",
+        "EDGE_RESTRICTED",
+        "CHECKPOINT_INELIGIBLE",
+        "ACCESS_UNVERIFIED",
+        "NO_PATH",
+        "NO_ACCESSIBLE_PATH",
+        "READINESS_UNKNOWN",
+        "STAFF_HANDOFF_PENDING",
+        "PICKUP_UNCONFIRMED",
+        "PICKUP_INELIGIBLE",
+        "CONSENT_MISSING",
+        "APPROVAL_REQUIRED",
+        "APPROVAL_EXPIRED",
+        "APPROVAL_DECLINED",
+        "CASE_CANCELLED",
+        "CASE_NOT_PENDING",
+        "CASE_SCOPE_CHANGED",
+        "DISPATCH_UNCONFIRMED",
+        "DISPATCH_OUTCOME_UNKNOWN",
+        "ROUTE_REVOKED",
+        "ROUTE_EXPIRED",
+        "ROUTE_UNAVAILABLE",
+        "WRONG_AIRPORT",
+        "WRONG_ROLE",
+        "STALE_REVISION",
+        "DUPLICATE_EVENT",
+        "ALREADY_DECIDED",
+        "SESSION_EXPIRED",
+        "AIRCRAFT_UNMATCHED",
+        "POSITION_UNAVAILABLE",
+        "POSITION_STALE",
+        "ESTIMATE_UNAVAILABLE",
+        "ESTIMATE_STALE",
+        "NOT_APPLICABLE",
+        "AMENITY_CLOSED",
+        "DATA_STALE",
+        "UNSUPPORTED_INPUT",
+        "INVALID_ARGUMENTS",
+        "UNAUTHORIZED_TOOL",
+        "RATE_LIMITED",
+        "TIMEOUT",
+        "SOURCE_UNAVAILABLE",
+        "BUDGET_EXHAUSTED",
+        "URGENT_SAFETY"
+      ],
+      "title": "ReasonCode",
+      "type": "string"
+    },
+    "Seconds": {
+      "minimum": 0,
+      "type": "integer"
+    },
+    "SecondsRange": {
+      "additionalProperties": false,
+      "properties": {
+        "lower": {
+          "$ref": "#/$defs/Seconds"
+        },
+        "upper": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/Seconds"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        }
+      },
+      "required": [
+        "lower",
+        "upper"
+      ],
+      "title": "SecondsRange",
+      "type": "object"
+    },
+    "SourceStamp": {
+      "additionalProperties": false,
+      "properties": {
+        "source": {
+          "$ref": "#/$defs/Id"
+        },
+        "observed_at": {
+          "$ref": "#/$defs/UTCInstant"
+        }
+      },
+      "required": [
+        "source",
+        "observed_at"
+      ],
+      "title": "SourceStamp",
+      "type": "object"
+    },
+    "UTCInstant": {
+      "format": "date-time",
+      "type": "string"
+    }
+  },
+  "additionalProperties": false,
+  "properties": {
+    "id": {
+      "$ref": "#/$defs/Id"
+    },
+    "timestamp": {
+      "$ref": "#/$defs/UTCInstant"
+    },
+    "event_type": {
+      "$ref": "#/$defs/EventType"
+    },
+    "payload": {
+      "anyOf": [
+        {
+          "$ref": "#/$defs/Observation"
+        },
+        {
+          "$ref": "#/$defs/Overlay"
+        },
+        {
+          "$ref": "#/$defs/QueueObservation"
+        },
+        {
+          "$ref": "#/$defs/AmenityObservation"
+        },
+        {
+          "$ref": "#/$defs/ReadinessEvent"
+        },
+        {
+          "$ref": "#/$defs/JourneyInputRequest"
+        },
+        {
+          "$ref": "#/$defs/Decision"
+        },
+        {
+          "$ref": "#/$defs/DispatchStatusRequest"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Payload"
+    }
+  },
+  "required": [
+    "id",
+    "timestamp",
+    "event_type"
+  ],
+  "title": "EventStreamItem",
+  "type": "object"
+}

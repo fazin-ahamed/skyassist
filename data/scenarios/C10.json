@@ -1,0 +1,25 @@
+{
+  "id": "C10",
+  "expected_gate": "B14",
+  "expected_cutoff": "2026-11-19T06:30:00Z",
+  "clock_start": "C10",
+  "profile": "standard",
+  "party_needs": {
+    "party_size": 1
+  },
+  "event_sequence": [
+    "ev-c10-queue-stale",
+    "ev-c10-ready"
+  ],
+  "expected_route_node_ids": [
+    "c_hall",
+    "b_hall",
+    "b14"
+  ],
+  "expected_transfer_lower_seconds": 660,
+  "expected_transfer_upper_seconds": null,
+  "expected_status": "Timing unverified",
+  "expected_margin_seconds": null,
+  "allowed_outbound_effects": [],
+  "required_passenger_action": "wait_for_update"
+}

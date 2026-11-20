@@ -1,0 +1,202 @@
+/* SkyAssist world: a baggage handling tag on a belt.
+ * The belt is the ground and flips with the theme. Tags and the receipt stay paper white in both themes (.paper
+ * re-declares the light semantic tokens, see paper.css). Indigo is the only action colour; status tones mean status. */
+
+@theme {
+  /* Accent ramp: terminal signage blue. The one action colour; status tones mean status. */
+  --color-accent-50: oklch(.968 .012 245);
+  --color-accent-100: oklch(.94 .024 245);
+  --color-accent-200: oklch(.89 .045 245);
+  --color-accent-300: oklch(.80 .075 247);
+  --color-accent-400: oklch(.67 .105 249);
+  --color-accent-500: oklch(.53 .12 251);
+  --color-accent-600: oklch(.44 .115 252);
+  --color-accent-700: oklch(.37 .1 252);
+  --color-accent-800: oklch(.31 .08 252);
+  --color-accent-900: oklch(.25 .06 252);
+  --color-accent-950: oklch(.2 .045 252);
+
+  --font-display: var(--font-barlow-condensed), "Barlow Condensed", ui-sans-serif, system-ui, sans-serif;
+}
+
+:root {
+  --belt: oklch(0.945 0.009 240);
+  --belt-line: oklch(0.905 0.011 240);
+  --belt-soft: oklch(0.4 0.025 245);
+  --tag-paper: oklch(0.997 0.002 240);
+  --tag-wash: oklch(0.966 0.006 240);
+  --tag-ink: oklch(0.2 0.03 248);
+  --tag-ink-soft: oklch(0.42 0.025 248);
+  --tag-rule: oklch(0.85 0.01 240);
+}
+.dark {
+  --belt: oklch(0.18 0.028 248);
+  --belt-line: oklch(0.215 0.03 248);
+  --belt-soft: oklch(0.78 0.02 245);
+}
+
+@theme inline {
+  --color-belt: var(--belt);
+  --color-belt-line: var(--belt-line);
+  --color-belt-soft: var(--belt-soft);
+  --color-tag: var(--tag-paper);
+  --color-tag-wash: var(--tag-wash);
+  --color-ink: var(--tag-ink);
+  --color-ink-soft: var(--tag-ink-soft);
+  --color-tag-rule: var(--tag-rule);
+}
+
+/* Numerals that carry the facts: gate, time, range. Condensed, heavy, tabular, always left to right. */
+@utility numeral-hero {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: clamp(5.5rem, 12.5vw, 11rem);
+  line-height: 0.84;
+  letter-spacing: -0.012em;
+  font-variant-numeric: tabular-nums;
+}
+@utility numeral-xl {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: clamp(3.25rem, 5.4vw, 4.75rem);
+  line-height: 0.92;
+  letter-spacing: -0.008em;
+  font-variant-numeric: tabular-nums;
+}
+@utility numeral-lg {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 2.5rem;
+  line-height: 1;
+  font-variant-numeric: tabular-nums;
+}
+@utility numeral-md {
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 1.625rem;
+  line-height: 1.1;
+  font-variant-numeric: tabular-nums;
+}
+
+@layer components {
+  /* One short contact shadow and a hairline: depth is stacking and perforation, not blur. */
+  .tag {
+    position: relative;
+    background: var(--tag-paper);
+    color: var(--tag-ink);
+    border: 1px solid var(--tag-rule);
+    border-radius: 14px;
+    box-shadow: 0 1px 0 oklch(0 0 0 / 0.05), 0 14px 14px -14px oklch(0 0 0 / 0.38);
+  }
+  .tag-wash { background: var(--tag-wash); }
+
+  /* Perforation with a notch cut out at each edge. The notch clips to the inside half so it reads as a bite. */
+  .tear { position: relative; height: 0; border-top: 2px dashed var(--tag-rule); }
+  .tear::before, .tear::after {
+    content: ""; position: absolute; top: -13px; width: 24px; height: 24px; border-radius: 9999px;
+    background: var(--belt); border: 1px solid var(--tag-rule);
+  }
+  .tear::before { left: -13px; clip-path: inset(0 0 0 50%); }
+  .tear::after { right: -13px; clip-path: inset(0 50% 0 0); }
+
+  .punch {
+    width: 22px; height: 22px; border-radius: 9999px; background: var(--belt); border: 1.5px solid var(--tag-rule);
+  }
+
+  /* The agent's printed log: narrow paper with a zigzag tear at the foot. */
+  .receipt {
+    position: relative;
+    background: var(--tag-paper);
+    color: var(--tag-ink);
+    border: 1px solid var(--tag-rule);
+    border-bottom: 0;
+    border-radius: 14px 14px 0 0;
+    -webkit-mask: linear-gradient(#000 0 0) top / 100% calc(100% - 9px) no-repeat,
+      conic-gradient(from -45deg at bottom, #0000, #000 1deg 89deg, #0000 90deg) bottom / 18px 9px repeat-x;
+    mask: linear-gradient(#000 0 0) top / 100% calc(100% - 9px) no-repeat,
+      conic-gradient(from -45deg at bottom, #0000, #000 1deg 89deg, #0000 90deg) bottom / 18px 9px repeat-x;
+  }
+
+  /* Status flag: a band across the top of a tag on phones, a tab hanging from the edge from sm up. */
+  .flag {
+    display: flex; align-items: center; gap: 0.5rem; margin: -1px -1px 0; padding: 0.625rem 1.5rem;
+    border-radius: 13px 13px 0 0;
+  }
+  @media (min-width: 40rem) {
+    .flag {
+      position: absolute; top: -1px; inset-inline-end: 28px; margin: 0; padding: 0.5rem 1rem 0.625rem;
+      border-radius: 0 0 12px 12px;
+    }
+  }
+}
+
+/* The belt: flat ground with faint slat lines. */
+body {
+  background-color: var(--belt);
+  background-image: repeating-linear-gradient(90deg, transparent 0 79px, var(--belt-line) 79px 80px);
+}
+
+/* One authored moment: a new line is printed onto the receipt. */
+@keyframes print-in {
+  from { opacity: 0; transform: translateY(-10px); clip-path: inset(0 0 100% 0); }
+  to { opacity: 1; transform: none; clip-path: inset(0); }
+}
+.print-in { animation: print-in 0.55s cubic-bezier(0.22, 1, 0.36, 1) both; }
+
+/* Heartbeat on the watching dot. */
+@keyframes watch-ping { 0% { transform: scale(0.7); opacity: 0.6; } 100% { transform: scale(2.4); opacity: 0; } }
+.watch-dot { position: relative; }
+.watch-dot::after {
+  content: ""; position: absolute; inset: 0; border-radius: 9999px; background: currentColor;
+  animation: watch-ping 2.4s cubic-bezier(0.22, 1, 0.36, 1) infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .print-in, .watch-dot::after { animation: none; }
+}
+
+/* Browser surfaces carry the design too. */
+::selection { background: oklch(0.9 0.1 95); color: oklch(0.2 0.03 80); }
+* { scrollbar-width: thin; scrollbar-color: oklch(0.68 0.02 245 / 0.6) transparent; caret-color: var(--color-accent-600); }
+
+/* The map: the position pin breathes once every couple of seconds; the part of the route still ahead flows (see airport-map). */
+@keyframes map-pulse { 0% { transform: scale(0.6); opacity: 0.55; } 100% { transform: scale(1.7); opacity: 0; } }
+.map-pulse { transform-box: fill-box; transform-origin: center; animation: map-pulse 2.2s cubic-bezier(0.22, 1, 0.36, 1) infinite; }
+@media (prefers-reduced-motion: reduce) { .map-pulse { animation: none; opacity: 0.2; } }
+
+/* The floating control: a dark capsule that reads on both the light and the dark belt. */
+:root {
+  --dock: oklch(0.22 0.04 250);
+  --dock-soft: oklch(0.3 0.04 250);
+  --dock-soft-hover: oklch(0.36 0.045 250);
+  --dock-line: oklch(0.42 0.04 250);
+  --dock-ink: oklch(0.985 0.003 240);
+  --dock-dim: oklch(0.78 0.02 245);
+}
+@theme inline {
+  --color-dock: var(--dock);
+  --color-dock-soft: var(--dock-soft);
+  --color-dock-soft-hover: var(--dock-soft-hover);
+  --color-dock-line: var(--dock-line);
+  --color-dock-ink: var(--dock-ink);
+  --color-dock-dim: var(--dock-dim);
+}
+
+/* The gate plate: black numerals on signage yellow. It appears wherever a gate does, and nowhere else. */
+:root { --plate: oklch(0.87 0.165 92); --plate-ink: oklch(0.2 0.03 80); }
+@theme inline { --color-plate: var(--plate); --color-plate-ink: var(--plate-ink); }
+@layer components {
+  .plate { background: var(--plate); color: var(--plate-ink); border-radius: 12px; box-shadow: inset 0 0 0 2px oklch(0.2 0.03 80 / 0.85); }
+}
+
+/* Buttons are flat: one tone per state. Hover and press step along the same ramp. */
+:root, .paper, .dark {
+  --gradient-button-primary-default: linear-gradient(var(--color-accent-600), var(--color-accent-600));
+  --gradient-button-primary-hover: linear-gradient(var(--color-accent-700), var(--color-accent-700));
+  --gradient-button-primary-active: linear-gradient(var(--color-accent-800), var(--color-accent-800));
+  --gradient-button-primary-disabled: linear-gradient(var(--tag-wash), var(--tag-wash));
+  --gradient-button-danger-default: linear-gradient(var(--color-red-600), var(--color-red-600));
+  --gradient-button-danger-hover: linear-gradient(var(--color-red-700), var(--color-red-700));
+  --gradient-button-danger-active: linear-gradient(var(--color-red-800), var(--color-red-800));
+  --gradient-button-danger-disabled: linear-gradient(var(--color-red-100), var(--color-red-100));
+}

@@ -1,0 +1,46 @@
+[
+  {
+    "ident": "OMDB",
+    "iata_code": "DXB",
+    "name": "Dubai International Airport",
+    "municipality": "Dubai",
+    "iso_country": "AE",
+    "latitude_deg": 25.24979,
+    "longitude_deg": 55.370992,
+    "elevation_ft": 62,
+    "timezone": "Asia/Dubai"
+  },
+  {
+    "ident": "OMAA",
+    "iata_code": "AUH",
+    "name": "Zayed International Airport",
+    "municipality": "Abu Dhabi",
+    "iso_country": "AE",
+    "latitude_deg": 24.440966,
+    "longitude_deg": 54.649237,
+    "elevation_ft": 88,
+    "timezone": "Asia/Dubai"
+  },
+  {
+    "ident": "OMDW",
+    "iata_code": "DWC",
+    "name": "Al Maktoum International Airport",
+    "municipality": "Dubai(Jebel Ali)",
+    "iso_country": "AE",
+    "latitude_deg": 24.896171,
+    "longitude_deg": 55.16235,
+    "elevation_ft": 114,
+    "timezone": "Asia/Dubai"
+  },
+  {
+    "ident": "OMSJ",
+    "iata_code": "SHJ",
+    "name": "Sharjah International Airport",
+    "municipality": "Sharjah",
+    "iso_country": "AE",
+    "latitude_deg": 25.3286,
+    "longitude_deg": 55.5172,
+    "elevation_ft": 111,
+    "timezone": "Asia/Dubai"
+  }
+]

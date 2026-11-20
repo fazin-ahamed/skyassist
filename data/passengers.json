@@ -1,0 +1,88 @@
+{
+  "note": "Synthetic manifest for the demo. Booking references are made up.",
+  "people": [
+    {
+      "booking_ref": "BK-MINOR1",
+      "pax_id": "1",
+      "name": "Omar K.",
+      "age": 12,
+      "unaccompanied_minor": true
+    },
+    {
+      "booking_ref": "BK-ADULT1",
+      "pax_id": "1",
+      "name": "Sara K.",
+      "age": 34
+    },
+    {
+      "booking_ref": "BK-GRAN1",
+      "pax_id": "1",
+      "name": "Amina R.",
+      "age": 79,
+      "elderly": true,
+      "wheelchair": true
+    },
+    {
+      "booking_ref": "BK-GRAN1",
+      "pax_id": "2",
+      "name": "Layla R.",
+      "age": 47
+    },
+    {
+      "booking_ref": "BK-OTHER1",
+      "pax_id": "1",
+      "name": "Dev P.",
+      "age": 41
+    },
+    {
+      "booking_ref": "BK-FAM1",
+      "pax_id": "1",
+      "name": "Noor H.",
+      "age": 68,
+      "wheelchair": true,
+      "elderly": true
+    },
+    {
+      "booking_ref": "BK-FAM1",
+      "pax_id": "2",
+      "name": "Hana H.",
+      "age": 40
+    },
+    {
+      "booking_ref": "BK-ELD1",
+      "pax_id": "1",
+      "name": "Joseph M.",
+      "age": 74,
+      "elderly": true
+    },
+    {
+      "booking_ref": "BK-FAM2",
+      "pax_id": "1",
+      "name": "Priya S.",
+      "age": 36
+    },
+    {
+      "booking_ref": "BK-FAM2",
+      "pax_id": "2",
+      "name": "Arjun S.",
+      "age": 3
+    }
+  ],
+  "resources": [
+    {
+      "kind": "buggy",
+      "total": 1,
+      "seats": 4
+    },
+    {
+      "kind": "wheelchair",
+      "total": 2,
+      "seats": 1
+    },
+    {
+      "kind": "escort",
+      "total": 3,
+      "seats": 1
+    }
+  ]
+}

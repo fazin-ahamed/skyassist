@@ -1,0 +1,23 @@
+{
+  "id": "C03",
+  "expected_gate": "B14",
+  "expected_cutoff": "2026-11-19T06:40:00Z",
+  "clock_start": "C03",
+  "profile": "standard",
+  "party_needs": {
+    "party_size": 1
+  },
+  "event_sequence": [
+    "ev-c03-ready"
+  ],
+  "expected_route_node_ids": [
+    "b_hall",
+    "b14"
+  ],
+  "expected_transfer_lower_seconds": 480,
+  "expected_transfer_upper_seconds": 660,
+  "expected_status": "Time available",
+  "expected_margin_seconds": 1740,
+  "allowed_outbound_effects": [],
+  "required_passenger_action": "follow_route"
+}

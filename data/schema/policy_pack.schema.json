@@ -1,0 +1,110 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$defs": {
+    "Id": {
+      "maxLength": 128,
+      "minLength": 1,
+      "type": "string"
+    },
+    "NonNegativeInt": {
+      "minimum": 0,
+      "type": "integer"
+    },
+    "Profile": {
+      "enum": [
+        "standard",
+        "family",
+        "reduced_mobility",
+        "family_mobility"
+      ],
+      "title": "Profile",
+      "type": "string"
+    },
+    "Seconds": {
+      "minimum": 0,
+      "type": "integer"
+    },
+    "SpeedBand": {
+      "additionalProperties": false,
+      "properties": {
+        "slow_mps": {
+          "exclusiveMinimum": 0,
+          "title": "Slow Mps",
+          "type": "number"
+        },
+        "fast_mps": {
+          "exclusiveMinimum": 0,
+          "title": "Fast Mps",
+          "type": "number"
+        }
+      },
+      "required": [
+        "slow_mps",
+        "fast_mps"
+      ],
+      "title": "SpeedBand",
+      "type": "object"
+    }
+  },
+  "additionalProperties": false,
+  "properties": {
+    "policy_version": {
+      "$ref": "#/$defs/Id",
+      "default": "demo-v1"
+    },
+    "buffer_floors": {
+      "additionalProperties": {
+        "$ref": "#/$defs/Seconds"
+      },
+      "propertyNames": {
+        "$ref": "#/$defs/Profile"
+      },
+      "title": "Buffer Floors",
+      "type": "object"
+    },
+    "speed_bands": {
+      "additionalProperties": {
+        "$ref": "#/$defs/SpeedBand"
+      },
+      "propertyNames": {
+        "$ref": "#/$defs/Profile"
+      },
+      "title": "Speed Bands",
+      "type": "object"
+    },
+    "refresh_seconds": {
+      "$ref": "#/$defs/Seconds",
+      "default": 20
+    },
+    "stale_seconds": {
+      "$ref": "#/$defs/Seconds",
+      "default": 90
+    },
+    "aircraft_last_reported_seconds": {
+      "$ref": "#/$defs/Seconds",
+      "default": 60
+    },
+    "aircraft_hide_seconds": {
+      "$ref": "#/$defs/Seconds",
+      "default": 180
+    },
+    "turn_reads": {
+      "$ref": "#/$defs/NonNegativeInt",
+      "default": 4
+    },
+    "model_retries": {
+      "$ref": "#/$defs/NonNegativeInt",
+      "default": 1
+    },
+    "turn_wall_seconds": {
+      "$ref": "#/$defs/Seconds",
+      "default": 8
+    },
+    "tight_margin_seconds": {
+      "$ref": "#/$defs/Seconds",
+      "default": 600
+    }
+  },
+  "title": "PolicyPack",
+  "type": "object"
+}

@@ -1,0 +1,21 @@
+{
+  "_review": "unreviewed",
+  "answer.clock": "الساعة {time} في دبي، {date}.",
+  "answer.clock_unknown": "لا أستطيع قراءة ساعة المطار الآن.",
+  "live.step.understand": "أفهم سؤالك",
+  "live.step.read.gate": "أقرأ بوابتك",
+  "live.step.read.map": "أتفقد المخطط",
+  "live.step.read.route": "أقرأ مسارك",
+  "live.step.read.ledger": "أقرأ ما تأكد",
+  "live.step.read.assist": "أتفقد طلباتك",
+  "live.step.clock": "أقرأ ساعة المطار",
+  "live.step.search": "أبحث في الويب",
+  "live.step.draft": "أكتب الجواب",
+  "live.step.check": "أراجع كل ادعاء",
+  "live.step.refused": "رفضت ادعاءً وأعيد الكتابة",
+  "live.sources": "المصادر",
+  "kk.pick_schedule": "لم أستطع مطابقة ذلك مع جدول اليوم. اختر رحلتك:",
+  "answer.flight_oag": "الرحلة {flight} من {origin} إلى {destination}: موعدها {time}، والحالة {status}. المصدر: OAG.",
+  "answer.flight_unknown": "لم أجد هذه الرحلة في بيانات الجدول. تحقق من رقم الرحلة وحاول مرة أخرى.",
+  "kk.busy": "ما زلت أعمل على رسالتك السابقة. لحظة من فضلك."
+}

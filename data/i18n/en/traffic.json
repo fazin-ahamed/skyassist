@@ -1,0 +1,6 @@
+{
+  "_review": "source",
+  "system.aircraft.landing": "Landing in about {wait} min",
+  "system.aircraft.arrivals": "Inbound to DXB",
+  "system.aircraft.sources": "Sources: {source}"
+}

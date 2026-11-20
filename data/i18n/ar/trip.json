@@ -1,0 +1,13 @@
+{
+  "_review": "unreviewed",
+  "trip.understood": "فهمت: وصلت من {origin} وتحتاج رحلة إلى {destination}.",
+  "trip.not_live": "البحث المباشر عن الرحلات غير مفعّل، لذلك لا أستطيع التحقق منها. اختر رحلتك من جدول اليوم.",
+  "trip.none_in": "لم أجد رحلة مطابقة من {origin} إلى دبي اليوم.",
+  "trip.none_out": "لم أجد رحلة مطابقة من دبي إلى {destination} اليوم.",
+  "trip.inbound": "الرحلة {flight} من {origin}: {status}، موعدها {time}، المبنى {terminal}.",
+  "trip.inbound_gate": "الرحلة {flight} من {origin}: {status}، موعدها {time}، المبنى {terminal}، البوابة {gate}.",
+  "trip.outbound": "الرحلة {flight} إلى {destination} تغادر الساعة {time} من المبنى {terminal}. لم تُحدد البوابة بعد.",
+  "trip.outbound_gate": "الرحلة {flight} إلى {destination} تغادر الساعة {time} من المبنى {terminal}، البوابة {gate}.",
+  "trip.pick": "أي هذه الرحلات رحلتك؟ أخبرني برقم الرحلة وسأتحقق من البوابة والطريق.",
+  "trip.status_unknown": "الحالة لم تُنشر بعد"
+}

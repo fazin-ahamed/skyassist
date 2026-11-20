@@ -1,0 +1,27 @@
+{
+  "id": "C04",
+  "expected_gate": "C12",
+  "expected_cutoff": "2026-11-19T06:08:00Z",
+  "clock_start": "C04",
+  "profile": "family",
+  "party_needs": {
+    "party_size": 2,
+    "children": 1
+  },
+  "event_sequence": [
+    "ev-c04-ready"
+  ],
+  "expected_route_node_ids": [
+    "public_hall",
+    "c_hall",
+    "c12"
+  ],
+  "expected_transfer_lower_seconds": 720,
+  "expected_transfer_upper_seconds": 1320,
+  "expected_status": "Transfer unlikely before cutoff",
+  "expected_margin_seconds": -840,
+  "allowed_outbound_effects": [
+    "coordinator_notification"
+  ],
+  "required_passenger_action": "seek_staff"
+}

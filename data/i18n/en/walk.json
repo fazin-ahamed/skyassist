@@ -1,0 +1,8 @@
+{
+  "_review": "source",
+  "walk.start": "Walk me to my gate",
+  "walk.pause": "Pause",
+  "walk.speed": "Walking speed",
+  "walk.step": "Stop {n} of {total}",
+  "walk.arrived": "You have arrived at gate {gate}."
+}

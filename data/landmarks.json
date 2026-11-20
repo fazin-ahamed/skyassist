@@ -1,0 +1,100 @@
+[
+  {
+    "airport": "DXB",
+    "node_id": "c22",
+    "alias": "C22",
+    "language": "en",
+    "source": "demo-landmarks-v1"
+  },
+  {
+    "airport": "DXB",
+    "node_id": "lift_c",
+    "alias": "Lift C",
+    "language": "en",
+    "source": "demo-landmarks-v1"
+  },
+  {
+    "airport": "DXB",
+    "node_id": "train_c",
+    "alias": "Train C",
+    "language": "en",
+    "source": "demo-landmarks-v1"
+  },
+  {
+    "airport": "DXB",
+    "node_id": "train_b",
+    "alias": "Train B",
+    "language": "en",
+    "source": "demo-landmarks-v1"
+  },
+  {
+    "airport": "DXB",
+    "node_id": "b14",
+    "alias": "B14",
+    "language": "en",
+    "source": "demo-landmarks-v1"
+  },
+  {
+    "airport": "DXB",
+    "node_id": "b18",
+    "alias": "B18",
+    "language": "en",
+    "source": "demo-landmarks-v1"
+  },
+  {
+    "airport": "DXB",
+    "node_id": "c12",
+    "alias": "C12",
+    "language": "en",
+    "source": "demo-landmarks-v1"
+  },
+  {
+    "airport": "DXB",
+    "node_id": "b_hall",
+    "alias": "B hall",
+    "language": "en",
+    "source": "demo-landmarks-v1"
+  },
+  {
+    "airport": "DXB",
+    "node_id": "c_hall",
+    "alias": "C hall",
+    "language": "en",
+    "source": "demo-landmarks-v1"
+  },
+  {
+    "airport": "DXB",
+    "node_id": "c_costa",
+    "alias": "Costa",
+    "language": "en",
+    "source": "demo-landmarks-v1"
+  },
+  {
+    "airport": "DXB",
+    "node_id": "b_costa",
+    "alias": "Costa",
+    "language": "en",
+    "source": "demo-landmarks-v1"
+  },
+  {
+    "airport": "DXB",
+    "node_id": "public_hall",
+    "alias": "Public hall",
+    "language": "en",
+    "source": "demo-landmarks-v1"
+  },
+  {
+    "airport": "DXB",
+    "node_id": "a3",
+    "alias": "A3",
+    "language": "en",
+    "source": "demo-landmarks-v1"
+  },
+  {
+    "airport": "DXB",
+    "node_id": "train_a",
+    "alias": "Train A",
+    "language": "en",
+    "source": "demo-landmarks-v1"
+  }
+]

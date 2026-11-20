@@ -1,0 +1,8 @@
+{
+  "_review": "unreviewed",
+  "walk.start": "امش بي إلى بوابتي",
+  "walk.pause": "إيقاف مؤقت",
+  "walk.speed": "سرعة المشي",
+  "walk.step": "المحطة {n} من {total}",
+  "walk.arrived": "لقد وصلت إلى البوابة {gate}."
+}

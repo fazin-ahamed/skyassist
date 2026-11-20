@@ -1,0 +1,31 @@
+[
+  {
+    "airline_iata": "DX",
+    "airline_icao": "DXA",
+    "flight_iata": "DX402",
+    "flight_icao": "DXA402",
+    "flight_number": "402",
+    "cs_airline_iata": null,
+    "cs_flight_iata": null,
+    "cs_flight_number": null,
+    "dep_iata": "DXB",
+    "dep_icao": "OMDB",
+    "dep_terminal": "1",
+    "dep_gate": null,
+    "dep_time": "2026-11-19 10:00",
+    "dep_time_utc": "2026-11-19 06:00",
+    "dep_estimated": "2026-11-19 10:20",
+    "dep_estimated_utc": "2026-11-19 06:20",
+    "dep_actual": null,
+    "dep_actual_utc": null,
+    "arr_iata": "AUH",
+    "arr_icao": "OMAA",
+    "arr_terminal": null,
+    "arr_gate": null,
+    "arr_baggage": null,
+    "arr_time": "2026-11-19 11:05",
+    "arr_time_utc": "2026-11-19 07:05",
+    "status": "scheduled",
+    "duration": 65
+  }
+]

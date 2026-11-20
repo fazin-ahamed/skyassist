@@ -1,0 +1,23 @@
+{
+  "landmark.c22": "C22 parked aircraft pickup point",
+  "landmark.lift_c": "Lift C lobby",
+  "landmark.c_stairs": "Stairs C upper landing",
+  "landmark.c_stairs_low": "Stairs C lower landing",
+  "landmark.train_c": "Train C platform",
+  "landmark.c_costa": "Costa cafe, level 1",
+  "landmark.c_walk": "C west corridor",
+  "landmark.c_hall_w": "C west hall",
+  "landmark.c_hall": "C central hall",
+  "landmark.c12": "Gate C12",
+  "landmark.train_b": "Train B platform",
+  "landmark.b_stairs": "B stairs core",
+  "landmark.b_hall": "B concourse hall",
+  "landmark.b_walk": "B north corridor",
+  "landmark.b14": "Gate B14",
+  "landmark.b18": "Gate B18",
+  "landmark.b_costa": "Costa cafe, level 2",
+  "landmark.public_hall": "Public arrivals hall",
+  "landmark.public_exit": "Public exit",
+  "landmark.a3": "Gate A3",
+  "landmark.train_a": "Train A platform"
+}

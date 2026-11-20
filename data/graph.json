@@ -1,0 +1,1489 @@
+{
+  "airport": "DXB",
+  "graph_version": "demo-graph-v1",
+  "nodes": [
+    {
+      "id": "c22",
+      "airport": "DXB",
+      "terminal": "1",
+      "concourse": "C",
+      "floor": "2",
+      "security_zone": "airside",
+      "landmark": {
+        "key": "landmark.c22",
+        "params": {}
+      },
+      "x": 20.0,
+      "y": 60.0,
+      "public": true,
+      "pickup_eligible": true
+    },
+    {
+      "id": "lift_c",
+      "airport": "DXB",
+      "terminal": "1",
+      "concourse": "C",
+      "floor": "2",
+      "security_zone": "airside",
+      "landmark": {
+        "key": "landmark.lift_c",
+        "params": {}
+      },
+      "x": 40.0,
+      "y": 60.0,
+      "public": true,
+      "pickup_eligible": false
+    },
+    {
+      "id": "c_stairs",
+      "airport": "DXB",
+      "terminal": "1",
+      "concourse": "C",
+      "floor": "2",
+      "security_zone": "airside",
+      "landmark": {
+        "key": "landmark.c_stairs",
+        "params": {}
+      },
+      "x": 40.0,
+      "y": 40.0,
+      "public": true,
+      "pickup_eligible": false
+    },
+    {
+      "id": "c_stairs_low",
+      "airport": "DXB",
+      "terminal": "1",
+      "concourse": "C",
+      "floor": "1",
+      "security_zone": "airside",
+      "landmark": {
+        "key": "landmark.c_stairs_low",
+        "params": {}
+      },
+      "x": 40.0,
+      "y": 40.0,
+      "public": true,
+      "pickup_eligible": false
+    },
+    {
+      "id": "train_c",
+      "airport": "DXB",
+      "terminal": "1",
+      "concourse": "C",
+      "floor": "1",
+      "security_zone": "airside",
+      "landmark": {
+        "key": "landmark.train_c",
+        "params": {}
+      },
+      "x": 60.0,
+      "y": 60.0,
+      "public": true,
+      "pickup_eligible": false
+    },
+    {
+      "id": "c_costa",
+      "airport": "DXB",
+      "terminal": "1",
+      "concourse": "C",
+      "floor": "1",
+      "security_zone": "airside",
+      "landmark": {
+        "key": "landmark.c_costa",
+        "params": {}
+      },
+      "x": 50.0,
+      "y": 35.0,
+      "public": true,
+      "pickup_eligible": false
+    },
+    {
+      "id": "c_walk",
+      "airport": "DXB",
+      "terminal": "1",
+      "concourse": "C",
+      "floor": "2",
+      "security_zone": "airside",
+      "landmark": {
+        "key": "landmark.c_walk",
+        "params": {}
+      },
+      "x": 60.0,
+      "y": 80.0,
+      "public": true,
+      "pickup_eligible": false
+    },
+    {
+      "id": "c_hall_w",
+      "airport": "DXB",
+      "terminal": "1",
+      "concourse": "C",
+      "floor": "2",
+      "security_zone": "airside",
+      "landmark": {
+        "key": "landmark.c_hall_w",
+        "params": {}
+      },
+      "x": 90.0,
+      "y": 80.0,
+      "public": true,
+      "pickup_eligible": false
+    },
+    {
+      "id": "c_hall",
+      "airport": "DXB",
+      "terminal": "1",
+      "concourse": "C",
+      "floor": "2",
+      "security_zone": "airside",
+      "landmark": {
+        "key": "landmark.c_hall",
+        "params": {}
+      },
+      "x": 110.0,
+      "y": 80.0,
+      "public": true,
+      "pickup_eligible": false
+    },
+    {
+      "id": "c12",
+      "airport": "DXB",
+      "terminal": "1",
+      "concourse": "C",
+      "floor": "2",
+      "security_zone": "airside",
+      "landmark": {
+        "key": "landmark.c12",
+        "params": {}
+      },
+      "x": 130.0,
+      "y": 90.0,
+      "public": true,
+      "pickup_eligible": false
+    },
+    {
+      "id": "c12_door",
+      "airport": "DXB",
+      "terminal": "1",
+      "concourse": "C",
+      "floor": "2",
+      "security_zone": "airside",
+      "landmark": {
+        "key": "landmark.c12_door",
+        "params": {}
+      },
+      "x": 150.0,
+      "y": 100.0,
+      "public": false,
+      "pickup_eligible": false
+    },
+    {
+      "id": "train_b",
+      "airport": "DXB",
+      "terminal": "1",
+      "concourse": "B",
+      "floor": "2",
+      "security_zone": "airside",
+      "landmark": {
+        "key": "landmark.train_b",
+        "params": {}
+      },
+      "x": 150.0,
+      "y": 40.0,
+      "public": true,
+      "pickup_eligible": false
+    },
+    {
+      "id": "b_stairs",
+      "airport": "DXB",
+      "terminal": "1",
+      "concourse": "B",
+      "floor": "2",
+      "security_zone": "airside",
+      "landmark": {
+        "key": "landmark.b_stairs",
+        "params": {}
+      },
+      "x": 165.0,
+      "y": 30.0,
+      "public": true,
+      "pickup_eligible": false
+    },
+    {
+      "id": "b_hall",
+      "airport": "DXB",
+      "terminal": "1",
+      "concourse": "B",
+      "floor": "2",
+      "security_zone": "airside",
+      "landmark": {
+        "key": "landmark.b_hall",
+        "params": {}
+      },
+      "x": 120.0,
+      "y": 40.0,
+      "public": true,
+      "pickup_eligible": true
+    },
+    {
+      "id": "b_walk",
+      "airport": "DXB",
+      "terminal": "1",
+      "concourse": "B",
+      "floor": "2",
+      "security_zone": "airside",
+      "landmark": {
+        "key": "landmark.b_walk",
+        "params": {}
+      },
+      "x": 130.0,
+      "y": 15.0,
+      "public": true,
+      "pickup_eligible": false
+    },
+    {
+      "id": "b14",
+      "airport": "DXB",
+      "terminal": "1",
+      "concourse": "B",
+      "floor": "2",
+      "security_zone": "airside",
+      "landmark": {
+        "key": "landmark.b14",
+        "params": {}
+      },
+      "x": 180.0,
+      "y": 40.0,
+      "public": true,
+      "pickup_eligible": false
+    },
+    {
+      "id": "b14_door",
+      "airport": "DXB",
+      "terminal": "1",
+      "concourse": "B",
+      "floor": "2",
+      "security_zone": "airside",
+      "landmark": {
+        "key": "landmark.b14_door",
+        "params": {}
+      },
+      "x": 195.0,
+      "y": 40.0,
+      "public": false,
+      "pickup_eligible": false
+    },
+    {
+      "id": "b18",
+      "airport": "DXB",
+      "terminal": "1",
+      "concourse": "B",
+      "floor": "2",
+      "security_zone": "airside",
+      "landmark": {
+        "key": "landmark.b18",
+        "params": {}
+      },
+      "x": 180.0,
+      "y": 15.0,
+      "public": true,
+      "pickup_eligible": false
+    },
+    {
+      "id": "b18_door",
+      "airport": "DXB",
+      "terminal": "1",
+      "concourse": "B",
+      "floor": "2",
+      "security_zone": "airside",
+      "landmark": {
+        "key": "landmark.b18_door",
+        "params": {}
+      },
+      "x": 195.0,
+      "y": 15.0,
+      "public": false,
+      "pickup_eligible": false
+    },
+    {
+      "id": "b_costa",
+      "airport": "DXB",
+      "terminal": "1",
+      "concourse": "B",
+      "floor": "2",
+      "security_zone": "airside",
+      "landmark": {
+        "key": "landmark.b_costa",
+        "params": {}
+      },
+      "x": 100.0,
+      "y": 30.0,
+      "public": true,
+      "pickup_eligible": false
+    },
+    {
+      "id": "public_hall",
+      "airport": "DXB",
+      "terminal": "1",
+      "concourse": "P",
+      "floor": "1",
+      "security_zone": "landside",
+      "landmark": {
+        "key": "landmark.public_hall",
+        "params": {}
+      },
+      "x": 20.0,
+      "y": 110.0,
+      "public": true,
+      "pickup_eligible": false
+    },
+    {
+      "id": "public_exit",
+      "airport": "DXB",
+      "terminal": "1",
+      "concourse": "P",
+      "floor": "1",
+      "security_zone": "landside",
+      "landmark": {
+        "key": "landmark.public_exit",
+        "params": {}
+      },
+      "x": 5.0,
+      "y": 110.0,
+      "public": true,
+      "pickup_eligible": false
+    },
+    {
+      "airport": "DXB",
+      "terminal": "1",
+      "concourse": "A",
+      "floor": "1",
+      "security_zone": "airside",
+      "public": true,
+      "pickup_eligible": false,
+      "id": "train_a",
+      "landmark": {
+        "key": "landmark.train_a",
+        "params": {}
+      },
+      "x": 170.0,
+      "y": 72.0
+    },
+    {
+      "airport": "DXB",
+      "terminal": "1",
+      "concourse": "A",
+      "floor": "1",
+      "security_zone": "airside",
+      "public": true,
+      "pickup_eligible": false,
+      "id": "a3",
+      "landmark": {
+        "key": "landmark.a3",
+        "params": {}
+      },
+      "x": 190.0,
+      "y": 100.0
+    }
+  ],
+  "edges": [
+    {
+      "id": "e_c22_c_stairs",
+      "from_node_id": "c22",
+      "to_node_id": "c_stairs",
+      "directed": true,
+      "distance_m": 30.0,
+      "steps": 24,
+      "slope": 0.0,
+      "lift": false,
+      "allowed_flows": [
+        "connecting",
+        "exiting",
+        "departing"
+      ],
+      "wait": {
+        "lower": 0,
+        "upper": 0
+      },
+      "fixed_movement": null,
+      "accessible": false,
+      "open_windows": [],
+      "closed": false,
+      "restricted": false,
+      "requires_access_evidence": false,
+      "queue_id": null,
+      "mode": "stairs",
+      "shape": []
+    },
+    {
+      "id": "e_c22_c_walk",
+      "from_node_id": "c22",
+      "to_node_id": "c_walk",
+      "directed": true,
+      "distance_m": 100.0,
+      "steps": 0,
+      "slope": 0.0,
+      "lift": false,
+      "allowed_flows": [
+        "connecting",
+        "exiting",
+        "departing"
+      ],
+      "wait": {
+        "lower": 0,
+        "upper": 0
+      },
+      "fixed_movement": null,
+      "accessible": true,
+      "open_windows": [],
+      "closed": false,
+      "restricted": false,
+      "requires_access_evidence": false,
+      "queue_id": null,
+      "mode": "walk",
+      "shape": []
+    },
+    {
+      "id": "e_c22_lift_c",
+      "from_node_id": "c22",
+      "to_node_id": "lift_c",
+      "directed": true,
+      "distance_m": 40.0,
+      "steps": 0,
+      "slope": 0.0,
+      "lift": false,
+      "allowed_flows": [
+        "connecting",
+        "exiting",
+        "departing"
+      ],
+      "wait": {
+        "lower": 0,
+        "upper": 0
+      },
+      "fixed_movement": null,
+      "accessible": true,
+      "open_windows": [],
+      "closed": false,
+      "restricted": false,
+      "requires_access_evidence": false,
+      "queue_id": null,
+      "mode": "walk",
+      "shape": []
+    },
+    {
+      "id": "e_c_stairs_c_stairs_low",
+      "from_node_id": "c_stairs",
+      "to_node_id": "c_stairs_low",
+      "directed": true,
+      "distance_m": 20.0,
+      "steps": 16,
+      "slope": 0.0,
+      "lift": false,
+      "allowed_flows": [
+        "connecting",
+        "exiting",
+        "departing"
+      ],
+      "wait": {
+        "lower": 0,
+        "upper": 0
+      },
+      "fixed_movement": null,
+      "accessible": false,
+      "open_windows": [],
+      "closed": false,
+      "restricted": false,
+      "requires_access_evidence": false,
+      "queue_id": null,
+      "mode": "stairs",
+      "shape": []
+    },
+    {
+      "id": "e_c_stairs_low_c_costa",
+      "from_node_id": "c_stairs_low",
+      "to_node_id": "c_costa",
+      "directed": true,
+      "distance_m": 30.0,
+      "steps": 0,
+      "slope": 0.0,
+      "lift": false,
+      "allowed_flows": [
+        "connecting",
+        "exiting",
+        "departing"
+      ],
+      "wait": {
+        "lower": 0,
+        "upper": 0
+      },
+      "fixed_movement": null,
+      "accessible": true,
+      "open_windows": [],
+      "closed": false,
+      "restricted": false,
+      "requires_access_evidence": false,
+      "queue_id": null,
+      "mode": "walk",
+      "shape": []
+    },
+    {
+      "id": "e_c_stairs_low_train_c",
+      "from_node_id": "c_stairs_low",
+      "to_node_id": "train_c",
+      "directed": true,
+      "distance_m": 10.0,
+      "steps": 2,
+      "slope": 0.0,
+      "lift": false,
+      "allowed_flows": [
+        "connecting",
+        "exiting",
+        "departing"
+      ],
+      "wait": {
+        "lower": 0,
+        "upper": 0
+      },
+      "fixed_movement": null,
+      "accessible": false,
+      "open_windows": [],
+      "closed": false,
+      "restricted": false,
+      "requires_access_evidence": false,
+      "queue_id": null,
+      "mode": "walk",
+      "shape": []
+    },
+    {
+      "id": "e_c_costa_train_c",
+      "from_node_id": "c_costa",
+      "to_node_id": "train_c",
+      "directed": true,
+      "distance_m": 40.0,
+      "steps": 0,
+      "slope": 0.0,
+      "lift": false,
+      "allowed_flows": [
+        "connecting",
+        "exiting",
+        "departing"
+      ],
+      "wait": {
+        "lower": 0,
+        "upper": 0
+      },
+      "fixed_movement": null,
+      "accessible": true,
+      "open_windows": [],
+      "closed": false,
+      "restricted": false,
+      "requires_access_evidence": false,
+      "queue_id": null,
+      "mode": "walk",
+      "shape": []
+    },
+    {
+      "id": "e_lift_c_train_c",
+      "from_node_id": "lift_c",
+      "to_node_id": "train_c",
+      "directed": true,
+      "distance_m": 30.0,
+      "steps": 0,
+      "slope": 0.0,
+      "lift": true,
+      "allowed_flows": [
+        "connecting",
+        "exiting",
+        "departing"
+      ],
+      "wait": {
+        "lower": 0,
+        "upper": 0
+      },
+      "fixed_movement": {
+        "lower": 120,
+        "upper": 120
+      },
+      "accessible": true,
+      "open_windows": [],
+      "closed": false,
+      "restricted": false,
+      "requires_access_evidence": true,
+      "queue_id": null,
+      "mode": "lift",
+      "shape": []
+    },
+    {
+      "id": "e_c_walk_c_hall_w",
+      "from_node_id": "c_walk",
+      "to_node_id": "c_hall_w",
+      "directed": true,
+      "distance_m": 60.0,
+      "steps": 0,
+      "slope": 0.0,
+      "lift": false,
+      "allowed_flows": [
+        "connecting",
+        "exiting",
+        "departing"
+      ],
+      "wait": {
+        "lower": 0,
+        "upper": 0
+      },
+      "fixed_movement": null,
+      "accessible": true,
+      "open_windows": [],
+      "closed": false,
+      "restricted": false,
+      "requires_access_evidence": false,
+      "queue_id": null,
+      "mode": "walk",
+      "shape": []
+    },
+    {
+      "id": "e_c_hall_w_c_hall",
+      "from_node_id": "c_hall_w",
+      "to_node_id": "c_hall",
+      "directed": true,
+      "distance_m": 60.0,
+      "steps": 0,
+      "slope": 0.0,
+      "lift": false,
+      "allowed_flows": [
+        "connecting",
+        "exiting",
+        "departing"
+      ],
+      "wait": {
+        "lower": 0,
+        "upper": 0
+      },
+      "fixed_movement": null,
+      "accessible": true,
+      "open_windows": [],
+      "closed": false,
+      "restricted": false,
+      "requires_access_evidence": false,
+      "queue_id": null,
+      "mode": "walk",
+      "shape": []
+    },
+    {
+      "id": "e_c_hall_c12",
+      "from_node_id": "c_hall",
+      "to_node_id": "c12",
+      "directed": true,
+      "distance_m": 0.0,
+      "steps": 0,
+      "slope": 0.0,
+      "lift": false,
+      "allowed_flows": [
+        "connecting",
+        "departing"
+      ],
+      "wait": {
+        "lower": 0,
+        "upper": 0
+      },
+      "fixed_movement": null,
+      "accessible": true,
+      "open_windows": [],
+      "closed": false,
+      "restricted": false,
+      "requires_access_evidence": false,
+      "queue_id": null,
+      "mode": "walk",
+      "shape": []
+    },
+    {
+      "id": "e_c12_c12_door",
+      "from_node_id": "c12",
+      "to_node_id": "c12_door",
+      "directed": true,
+      "distance_m": 15.0,
+      "steps": 0,
+      "slope": 0.0,
+      "lift": false,
+      "allowed_flows": [
+        "departing"
+      ],
+      "wait": {
+        "lower": 0,
+        "upper": 0
+      },
+      "fixed_movement": null,
+      "accessible": true,
+      "open_windows": [],
+      "closed": false,
+      "restricted": true,
+      "requires_access_evidence": false,
+      "queue_id": null,
+      "mode": "walk",
+      "shape": []
+    },
+    {
+      "id": "e_c_hall_b_hall",
+      "from_node_id": "c_hall",
+      "to_node_id": "b_hall",
+      "directed": true,
+      "distance_m": 0.0,
+      "steps": 0,
+      "slope": 0.0,
+      "lift": false,
+      "allowed_flows": [
+        "connecting"
+      ],
+      "wait": {
+        "lower": 60,
+        "upper": 180
+      },
+      "fixed_movement": {
+        "lower": 120,
+        "upper": 240
+      },
+      "accessible": true,
+      "open_windows": [],
+      "closed": false,
+      "restricted": false,
+      "requires_access_evidence": false,
+      "queue_id": "q_transfer",
+      "mode": "checkpoint",
+      "shape": []
+    },
+    {
+      "id": "e_train_c_train_b",
+      "from_node_id": "train_c",
+      "to_node_id": "train_b",
+      "directed": true,
+      "distance_m": 50.0,
+      "steps": 0,
+      "slope": 0.0,
+      "lift": false,
+      "allowed_flows": [
+        "connecting",
+        "exiting",
+        "departing"
+      ],
+      "wait": {
+        "lower": 180,
+        "upper": 420
+      },
+      "fixed_movement": {
+        "lower": 180,
+        "upper": 180
+      },
+      "accessible": true,
+      "open_windows": [],
+      "closed": false,
+      "restricted": false,
+      "requires_access_evidence": false,
+      "queue_id": null,
+      "mode": "transit",
+      "shape": []
+    },
+    {
+      "id": "e_train_b_train_c",
+      "from_node_id": "train_b",
+      "to_node_id": "train_c",
+      "directed": true,
+      "distance_m": 50.0,
+      "steps": 0,
+      "slope": 0.0,
+      "lift": false,
+      "allowed_flows": [
+        "connecting",
+        "exiting",
+        "departing"
+      ],
+      "wait": {
+        "lower": 180,
+        "upper": 420
+      },
+      "fixed_movement": {
+        "lower": 180,
+        "upper": 180
+      },
+      "accessible": true,
+      "open_windows": [],
+      "closed": false,
+      "restricted": false,
+      "requires_access_evidence": false,
+      "queue_id": null,
+      "mode": "transit",
+      "shape": []
+    },
+    {
+      "id": "e_train_b_b14",
+      "from_node_id": "train_b",
+      "to_node_id": "b14",
+      "directed": true,
+      "distance_m": 80.0,
+      "steps": 0,
+      "slope": 0.0,
+      "lift": false,
+      "allowed_flows": [
+        "connecting",
+        "exiting",
+        "departing"
+      ],
+      "wait": {
+        "lower": 0,
+        "upper": 0
+      },
+      "fixed_movement": null,
+      "accessible": true,
+      "open_windows": [],
+      "closed": false,
+      "restricted": false,
+      "requires_access_evidence": false,
+      "queue_id": null,
+      "mode": "walk",
+      "shape": []
+    },
+    {
+      "id": "e_train_b_b_stairs",
+      "from_node_id": "train_b",
+      "to_node_id": "b_stairs",
+      "directed": true,
+      "distance_m": 20.0,
+      "steps": 16,
+      "slope": 0.0,
+      "lift": false,
+      "allowed_flows": [
+        "connecting",
+        "exiting",
+        "departing"
+      ],
+      "wait": {
+        "lower": 0,
+        "upper": 0
+      },
+      "fixed_movement": null,
+      "accessible": false,
+      "open_windows": [],
+      "closed": false,
+      "restricted": false,
+      "requires_access_evidence": false,
+      "queue_id": null,
+      "mode": "stairs",
+      "shape": []
+    },
+    {
+      "id": "e_b_stairs_b14",
+      "from_node_id": "b_stairs",
+      "to_node_id": "b14",
+      "directed": true,
+      "distance_m": 20.0,
+      "steps": 16,
+      "slope": 0.0,
+      "lift": false,
+      "allowed_flows": [
+        "connecting",
+        "exiting",
+        "departing"
+      ],
+      "wait": {
+        "lower": 0,
+        "upper": 0
+      },
+      "fixed_movement": null,
+      "accessible": false,
+      "open_windows": [],
+      "closed": false,
+      "restricted": false,
+      "requires_access_evidence": false,
+      "queue_id": null,
+      "mode": "stairs",
+      "shape": []
+    },
+    {
+      "id": "e_train_b_b_hall",
+      "from_node_id": "train_b",
+      "to_node_id": "b_hall",
+      "directed": true,
+      "distance_m": 60.0,
+      "steps": 0,
+      "slope": 0.0,
+      "lift": false,
+      "allowed_flows": [
+        "connecting",
+        "exiting",
+        "departing"
+      ],
+      "wait": {
+        "lower": 0,
+        "upper": 0
+      },
+      "fixed_movement": null,
+      "accessible": true,
+      "open_windows": [],
+      "closed": false,
+      "restricted": false,
+      "requires_access_evidence": false,
+      "queue_id": null,
+      "mode": "walk",
+      "shape": []
+    },
+    {
+      "id": "e_b_hall_b14",
+      "from_node_id": "b_hall",
+      "to_node_id": "b14",
+      "directed": true,
+      "distance_m": 300.0,
+      "steps": 0,
+      "slope": 0.0,
+      "lift": false,
+      "allowed_flows": [
+        "connecting",
+        "exiting",
+        "departing"
+      ],
+      "wait": {
+        "lower": 0,
+        "upper": 0
+      },
+      "fixed_movement": {
+        "lower": 300,
+        "upper": 480
+      },
+      "accessible": true,
+      "open_windows": [],
+      "closed": false,
+      "restricted": false,
+      "requires_access_evidence": false,
+      "queue_id": null,
+      "mode": "walk",
+      "shape": []
+    },
+    {
+      "id": "e_b_hall_b_walk",
+      "from_node_id": "b_hall",
+      "to_node_id": "b_walk",
+      "directed": true,
+      "distance_m": 300.0,
+      "steps": 0,
+      "slope": 0.0,
+      "lift": false,
+      "allowed_flows": [
+        "connecting",
+        "exiting",
+        "departing"
+      ],
+      "wait": {
+        "lower": 0,
+        "upper": 0
+      },
+      "fixed_movement": null,
+      "accessible": true,
+      "open_windows": [],
+      "closed": false,
+      "restricted": false,
+      "requires_access_evidence": false,
+      "queue_id": null,
+      "mode": "walk",
+      "shape": []
+    },
+    {
+      "id": "e_b_walk_b14",
+      "from_node_id": "b_walk",
+      "to_node_id": "b14",
+      "directed": true,
+      "distance_m": 300.0,
+      "steps": 0,
+      "slope": 0.0,
+      "lift": false,
+      "allowed_flows": [
+        "connecting",
+        "exiting",
+        "departing"
+      ],
+      "wait": {
+        "lower": 0,
+        "upper": 0
+      },
+      "fixed_movement": null,
+      "accessible": true,
+      "open_windows": [],
+      "closed": false,
+      "restricted": false,
+      "requires_access_evidence": false,
+      "queue_id": null,
+      "mode": "walk",
+      "shape": []
+    },
+    {
+      "id": "e_b_hall_b18",
+      "from_node_id": "b_hall",
+      "to_node_id": "b18",
+      "directed": true,
+      "distance_m": 210.0,
+      "steps": 0,
+      "slope": 0.0,
+      "lift": false,
+      "allowed_flows": [
+        "connecting",
+        "exiting",
+        "departing"
+      ],
+      "wait": {
+        "lower": 0,
+        "upper": 0
+      },
+      "fixed_movement": null,
+      "accessible": true,
+      "open_windows": [],
+      "closed": false,
+      "restricted": false,
+      "requires_access_evidence": false,
+      "queue_id": null,
+      "mode": "walk",
+      "shape": []
+    },
+    {
+      "id": "e_b14_b14_door",
+      "from_node_id": "b14",
+      "to_node_id": "b14_door",
+      "directed": true,
+      "distance_m": 15.0,
+      "steps": 0,
+      "slope": 0.0,
+      "lift": false,
+      "allowed_flows": [
+        "departing"
+      ],
+      "wait": {
+        "lower": 0,
+        "upper": 0
+      },
+      "fixed_movement": null,
+      "accessible": true,
+      "open_windows": [],
+      "closed": false,
+      "restricted": true,
+      "requires_access_evidence": false,
+      "queue_id": null,
+      "mode": "walk",
+      "shape": []
+    },
+    {
+      "id": "e_b18_b18_door",
+      "from_node_id": "b18",
+      "to_node_id": "b18_door",
+      "directed": true,
+      "distance_m": 15.0,
+      "steps": 0,
+      "slope": 0.0,
+      "lift": false,
+      "allowed_flows": [
+        "departing"
+      ],
+      "wait": {
+        "lower": 0,
+        "upper": 0
+      },
+      "fixed_movement": null,
+      "accessible": true,
+      "open_windows": [],
+      "closed": false,
+      "restricted": true,
+      "requires_access_evidence": false,
+      "queue_id": null,
+      "mode": "walk",
+      "shape": []
+    },
+    {
+      "id": "e_b_costa_b14",
+      "from_node_id": "b_costa",
+      "to_node_id": "b14",
+      "directed": true,
+      "distance_m": 90.0,
+      "steps": 0,
+      "slope": 0.0,
+      "lift": false,
+      "allowed_flows": [
+        "connecting",
+        "exiting",
+        "departing"
+      ],
+      "wait": {
+        "lower": 0,
+        "upper": 0
+      },
+      "fixed_movement": null,
+      "accessible": true,
+      "open_windows": [],
+      "closed": false,
+      "restricted": false,
+      "requires_access_evidence": false,
+      "queue_id": null,
+      "mode": "walk",
+      "shape": []
+    },
+    {
+      "id": "e_public_hall_c_hall",
+      "from_node_id": "public_hall",
+      "to_node_id": "c_hall",
+      "directed": true,
+      "distance_m": 0.0,
+      "steps": 0,
+      "slope": 0.0,
+      "lift": false,
+      "allowed_flows": [
+        "departing"
+      ],
+      "wait": {
+        "lower": 180,
+        "upper": 420
+      },
+      "fixed_movement": {
+        "lower": 240,
+        "upper": 600
+      },
+      "accessible": true,
+      "open_windows": [
+        {
+          "start": "2026-11-19T03:00:00Z",
+          "end": "2026-11-19T20:00:00Z"
+        }
+      ],
+      "closed": false,
+      "restricted": false,
+      "requires_access_evidence": false,
+      "queue_id": null,
+      "mode": "checkpoint",
+      "shape": []
+    },
+    {
+      "id": "e_public_exit_public_hall",
+      "from_node_id": "public_exit",
+      "to_node_id": "public_hall",
+      "directed": true,
+      "distance_m": 20.0,
+      "steps": 0,
+      "slope": 0.0,
+      "lift": false,
+      "allowed_flows": [
+        "exiting"
+      ],
+      "wait": {
+        "lower": 0,
+        "upper": 0
+      },
+      "fixed_movement": null,
+      "accessible": true,
+      "open_windows": [],
+      "closed": false,
+      "restricted": false,
+      "requires_access_evidence": false,
+      "queue_id": null,
+      "mode": "walk",
+      "shape": []
+    },
+    {
+      "id": "e_train_c_train_a",
+      "from_node_id": "train_c",
+      "to_node_id": "train_a",
+      "directed": true,
+      "distance_m": 150.0,
+      "steps": 0,
+      "slope": 0.0,
+      "lift": false,
+      "allowed_flows": [
+        "connecting",
+        "exiting",
+        "departing"
+      ],
+      "wait": {
+        "lower": 180,
+        "upper": 420
+      },
+      "fixed_movement": {
+        "lower": 300,
+        "upper": 300
+      },
+      "accessible": true,
+      "open_windows": [],
+      "closed": false,
+      "restricted": false,
+      "requires_access_evidence": false,
+      "queue_id": null,
+      "mode": "transit",
+      "shape": []
+    },
+    {
+      "id": "e_train_a_train_c",
+      "from_node_id": "train_a",
+      "to_node_id": "train_c",
+      "directed": true,
+      "distance_m": 150.0,
+      "steps": 0,
+      "slope": 0.0,
+      "lift": false,
+      "allowed_flows": [
+        "connecting",
+        "exiting",
+        "departing"
+      ],
+      "wait": {
+        "lower": 180,
+        "upper": 420
+      },
+      "fixed_movement": {
+        "lower": 300,
+        "upper": 300
+      },
+      "accessible": true,
+      "open_windows": [],
+      "closed": false,
+      "restricted": false,
+      "requires_access_evidence": false,
+      "queue_id": null,
+      "mode": "transit",
+      "shape": []
+    },
+    {
+      "id": "e_train_b_train_a",
+      "from_node_id": "train_b",
+      "to_node_id": "train_a",
+      "directed": true,
+      "distance_m": 150.0,
+      "steps": 0,
+      "slope": 0.0,
+      "lift": false,
+      "allowed_flows": [
+        "connecting",
+        "exiting",
+        "departing"
+      ],
+      "wait": {
+        "lower": 180,
+        "upper": 420
+      },
+      "fixed_movement": {
+        "lower": 300,
+        "upper": 300
+      },
+      "accessible": true,
+      "open_windows": [],
+      "closed": false,
+      "restricted": false,
+      "requires_access_evidence": false,
+      "queue_id": null,
+      "mode": "transit",
+      "shape": []
+    },
+    {
+      "id": "e_train_a_train_b",
+      "from_node_id": "train_a",
+      "to_node_id": "train_b",
+      "directed": true,
+      "distance_m": 150.0,
+      "steps": 0,
+      "slope": 0.0,
+      "lift": false,
+      "allowed_flows": [
+        "connecting",
+        "exiting",
+        "departing"
+      ],
+      "wait": {
+        "lower": 180,
+        "upper": 420
+      },
+      "fixed_movement": {
+        "lower": 300,
+        "upper": 300
+      },
+      "accessible": true,
+      "open_windows": [],
+      "closed": false,
+      "restricted": false,
+      "requires_access_evidence": false,
+      "queue_id": null,
+      "mode": "transit",
+      "shape": []
+    },
+    {
+      "id": "e_train_a_a3",
+      "from_node_id": "train_a",
+      "to_node_id": "a3",
+      "directed": true,
+      "distance_m": 250.0,
+      "steps": 0,
+      "slope": 0.0,
+      "lift": false,
+      "allowed_flows": [
+        "connecting",
+        "exiting",
+        "departing"
+      ],
+      "wait": {
+        "lower": 0,
+        "upper": 0
+      },
+      "fixed_movement": {
+        "lower": 300,
+        "upper": 540
+      },
+      "accessible": true,
+      "open_windows": [],
+      "closed": false,
+      "restricted": false,
+      "requires_access_evidence": false,
+      "queue_id": null,
+      "mode": "walk",
+      "shape": []
+    },
+    {
+      "id": "e_a3_train_a",
+      "from_node_id": "a3",
+      "to_node_id": "train_a",
+      "directed": true,
+      "distance_m": 250.0,
+      "steps": 0,
+      "slope": 0.0,
+      "lift": false,
+      "allowed_flows": [
+        "connecting",
+        "exiting",
+        "departing"
+      ],
+      "wait": {
+        "lower": 0,
+        "upper": 0
+      },
+      "fixed_movement": {
+        "lower": 300,
+        "upper": 540
+      },
+      "accessible": true,
+      "open_windows": [],
+      "closed": false,
+      "restricted": false,
+      "requires_access_evidence": false,
+      "queue_id": null,
+      "mode": "walk",
+      "shape": []
+    }
+  ],
+  "floor_shapes": [
+    {
+      "terminal": "1",
+      "concourse": "C",
+      "floor": "2",
+      "points": [
+        {
+          "x": 0.0,
+          "y": 20.0
+        },
+        {
+          "x": 160.0,
+          "y": 20.0
+        },
+        {
+          "x": 160.0,
+          "y": 100.0
+        },
+        {
+          "x": 0.0,
+          "y": 100.0
+        }
+      ]
+    },
+    {
+      "terminal": "1",
+      "concourse": "C",
+      "floor": "1",
+      "points": [
+        {
+          "x": 0.0,
+          "y": 20.0
+        },
+        {
+          "x": 160.0,
+          "y": 20.0
+        },
+        {
+          "x": 160.0,
+          "y": 100.0
+        },
+        {
+          "x": 0.0,
+          "y": 100.0
+        }
+      ]
+    },
+    {
+      "terminal": "1",
+      "concourse": "B",
+      "floor": "2",
+      "points": [
+        {
+          "x": 100.0,
+          "y": 0.0
+        },
+        {
+          "x": 200.0,
+          "y": 0.0
+        },
+        {
+          "x": 200.0,
+          "y": 60.0
+        },
+        {
+          "x": 100.0,
+          "y": 60.0
+        }
+      ]
+    },
+    {
+      "terminal": "1",
+      "concourse": "P",
+      "floor": "1",
+      "points": [
+        {
+          "x": 0.0,
+          "y": 80.0
+        },
+        {
+          "x": 40.0,
+          "y": 80.0
+        },
+        {
+          "x": 40.0,
+          "y": 120.0
+        },
+        {
+          "x": 0.0,
+          "y": 120.0
+        }
+      ]
+    },
+    {
+      "terminal": "1",
+      "concourse": "A",
+      "floor": "1",
+      "points": [
+        {
+          "x": 160.0,
+          "y": 60.0
+        },
+        {
+          "x": 200.0,
+          "y": 60.0
+        },
+        {
+          "x": 200.0,
+          "y": 120.0
+        },
+        {
+          "x": 160.0,
+          "y": 120.0
+        }
+      ]
+    }
+  ]
+}

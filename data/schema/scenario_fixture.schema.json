@@ -1,0 +1,208 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$defs": {
+    "ConnectionStatus": {
+      "enum": [
+        "Time available",
+        "Tight connection",
+        "Transfer unlikely before cutoff",
+        "May miss boarding",
+        "Boarding cutoff passed",
+        "Timing unverified"
+      ],
+      "title": "ConnectionStatus",
+      "type": "string"
+    },
+    "Id": {
+      "maxLength": 128,
+      "minLength": 1,
+      "type": "string"
+    },
+    "NonNegativeInt": {
+      "minimum": 0,
+      "type": "integer"
+    },
+    "OutboundEffect": {
+      "enum": [
+        "coordinator_notification",
+        "mobility_dispatch",
+        "gate_hold_review"
+      ],
+      "title": "OutboundEffect",
+      "type": "string"
+    },
+    "PartyNeeds": {
+      "additionalProperties": false,
+      "properties": {
+        "party_size": {
+          "default": 1,
+          "minimum": 1,
+          "title": "Party Size",
+          "type": "integer"
+        },
+        "children": {
+          "$ref": "#/$defs/NonNegativeInt",
+          "default": 0
+        },
+        "step_free": {
+          "default": false,
+          "title": "Step Free",
+          "type": "boolean"
+        },
+        "wheelchair": {
+          "default": false,
+          "title": "Wheelchair",
+          "type": "boolean"
+        }
+      },
+      "title": "PartyNeeds",
+      "type": "object"
+    },
+    "PassengerAction": {
+      "enum": [
+        "choose_flight",
+        "confirm_date",
+        "choose_landmark",
+        "confirm_pickup",
+        "wait_for_handoff",
+        "follow_route",
+        "seek_staff",
+        "refresh_route",
+        "check_gate",
+        "seek_emergency_help",
+        "wait_for_update"
+      ],
+      "title": "PassengerAction",
+      "type": "string"
+    },
+    "Profile": {
+      "enum": [
+        "standard",
+        "family",
+        "reduced_mobility",
+        "family_mobility"
+      ],
+      "title": "Profile",
+      "type": "string"
+    },
+    "Seconds": {
+      "minimum": 0,
+      "type": "integer"
+    },
+    "UTCInstant": {
+      "format": "date-time",
+      "type": "string"
+    }
+  },
+  "additionalProperties": false,
+  "properties": {
+    "id": {
+      "$ref": "#/$defs/Id"
+    },
+    "clock_start": {
+      "$ref": "#/$defs/Id"
+    },
+    "profile": {
+      "$ref": "#/$defs/Profile"
+    },
+    "party_needs": {
+      "$ref": "#/$defs/PartyNeeds"
+    },
+    "event_sequence": {
+      "items": {
+        "$ref": "#/$defs/Id"
+      },
+      "title": "Event Sequence",
+      "type": "array"
+    },
+    "expected_route_node_ids": {
+      "items": {
+        "$ref": "#/$defs/Id"
+      },
+      "title": "Expected Route Node Ids",
+      "type": "array"
+    },
+    "expected_transfer_lower_seconds": {
+      "anyOf": [
+        {
+          "$ref": "#/$defs/Seconds"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "expected_transfer_upper_seconds": {
+      "anyOf": [
+        {
+          "$ref": "#/$defs/Seconds"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "expected_status": {
+      "$ref": "#/$defs/ConnectionStatus"
+    },
+    "expected_margin_seconds": {
+      "anyOf": [
+        {
+          "type": "integer"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "title": "Expected Margin Seconds"
+    },
+    "allowed_outbound_effects": {
+      "items": {
+        "$ref": "#/$defs/OutboundEffect"
+      },
+      "title": "Allowed Outbound Effects",
+      "type": "array"
+    },
+    "required_passenger_action": {
+      "$ref": "#/$defs/PassengerAction"
+    },
+    "expected_gate": {
+      "anyOf": [
+        {
+          "$ref": "#/$defs/Id"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null
+    },
+    "expected_cutoff": {
+      "anyOf": [
+        {
+          "$ref": "#/$defs/UTCInstant"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null
+    }
+  },
+  "required": [
+    "id",
+    "clock_start",
+    "profile",
+    "party_needs",
+    "event_sequence",
+    "expected_route_node_ids",
+    "expected_transfer_lower_seconds",
+    "expected_transfer_upper_seconds",
+    "expected_status",
+    "expected_margin_seconds",
+    "allowed_outbound_effects",
+    "required_passenger_action"
+  ],
+  "title": "ScenarioFixture",
+  "type": "object"
+}

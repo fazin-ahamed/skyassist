@@ -1,0 +1,38 @@
+{
+  "id": "C01",
+  "expected_gate": "B14",
+  "expected_cutoff": "2026-11-19T06:35:00Z",
+  "clock_start": "C01",
+  "profile": "family_mobility",
+  "party_needs": {
+    "party_size": 3,
+    "children": 1,
+    "step_free": true,
+    "wheelchair": true
+  },
+  "event_sequence": [
+    "ev-c01-lift-closed",
+    "ev-c01-lift-open",
+    "ev-c01-ready",
+    "ev-c01-gate-b14",
+    "ev-c01-assist",
+    "ev-c01-approve",
+    "ev-c01-dispatched"
+  ],
+  "expected_route_node_ids": [
+    "c22",
+    "lift_c",
+    "train_c",
+    "train_b",
+    "b14"
+  ],
+  "expected_transfer_lower_seconds": 1260,
+  "expected_transfer_upper_seconds": 1740,
+  "expected_status": "Tight connection",
+  "expected_margin_seconds": 360,
+  "allowed_outbound_effects": [
+    "coordinator_notification",
+    "mobility_dispatch"
+  ],
+  "required_passenger_action": "wait_for_handoff"
+}

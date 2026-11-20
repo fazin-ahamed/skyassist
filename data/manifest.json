@@ -1,0 +1,103 @@
+{
+  "label": "Demo dataset: terminal map, flights and fixtures",
+  "mode": "demo",
+  "dataset_version": "skyassist-demo-2026-11-19.1",
+  "generator_seed": 20261119,
+  "graph_version": "demo-graph-v1",
+  "policy_version": "demo-policy-v1",
+  "airport": "DXB",
+  "timezone": "Asia/Dubai",
+  "demo_date": "2026-11-19",
+  "counts": {
+    "nodes": 24,
+    "edges": 34,
+    "flight_legs": 21,
+    "events": 31,
+    "scenarios": 10,
+    "landmark_aliases": 14
+  },
+  "scenario_routes": {
+    "C01": [
+      "c22",
+      "lift_c",
+      "train_c",
+      "train_b",
+      "b14"
+    ],
+    "C02": [
+      "b_hall",
+      "b18"
+    ],
+    "C03": [
+      "b_hall",
+      "b14"
+    ],
+    "C04": [
+      "public_hall",
+      "c_hall",
+      "c12"
+    ],
+    "C05": [
+      "b_hall",
+      "b14"
+    ],
+    "C06": [
+      "b_hall",
+      "b18"
+    ],
+    "C07": [
+      "b_costa",
+      "b14"
+    ],
+    "C08": [],
+    "C09": [
+      "b_hall",
+      "b18"
+    ],
+    "C10": [
+      "c_hall",
+      "b_hall",
+      "b14"
+    ]
+  },
+  "route_node_legend": {
+    "c22": "Concourse C pickup point C22 (parked aircraft)",
+    "lift_c": "Lift C lobby, level 2",
+    "train_c": "Train C platform, level 1",
+    "train_b": "Train B platform, level 2",
+    "b14": "Gate B14",
+    "b_hall": "Concourse B hall (pickup point)",
+    "b18": "Gate B18",
+    "b_costa": "Costa landmark, level 2, concourse B",
+    "public_hall": "Public arrivals hall (landside)",
+    "c_hall": "Concourse C central hall",
+    "c12": "Gate C12"
+  },
+  "sub_check_events": [
+    "ev-c08-lift-reopen",
+    "ev-c10-queue-fresh"
+  ],
+  "licenses": [
+    {
+      "component": "Airport metadata (data/airports.json)",
+      "source": "OurAirports airports.csv (https://github.com/davidmegginson/ourairports-data)",
+      "license": "Public domain (per the dataset)",
+      "revision": "0232ba97e90a8784258495da8ea7b3b9b9ceeff3"
+    },
+    {
+      "component": "Terminal map, flights, events, scenarios and i18n",
+      "source": "Hand-authored synthetic fixtures in this repository",
+      "license": "Project demo data; no real persons, passengers or airline schedules"
+    }
+  ],
+  "known_gaps": [
+    "No live provider data (AirLabs, Flightradar24, OpenSky, queue or baggage feeds).",
+    "Overlay, QueueObservation and AmenityObservation carry no received_at; ReadinessEvent carries no valid_until or received_at (models.py). Lint checks the fields that exist.",
+    "Amenity observations (family stretch) are not seeded.",
+    "db.py has no landmark-alias table; data/landmarks.json is read from fixtures only.",
+    "build_demo_db persists nodes, edges, flight legs, aliases and initial observations. Events and policy are replayed from fixtures, not stored.",
+    "Speed bands are synthetic calibration; 0.5, 0.75, 1.0, 1.25 and 1.5 m/s keep ceil() exact.",
+    "Boarding cutoff 10:40 Dubai is shared by ZX310 (C03) and ZX420 (C06); cutoffs are distinct per leg, not globally.",
+    "Arabic landmark labels are unreviewed."
+  ]
+}

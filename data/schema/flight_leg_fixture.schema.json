@@ -1,0 +1,206 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$defs": {
+    "AirportCode": {
+      "pattern": "^[A-Z]{3}$",
+      "type": "string"
+    },
+    "Id": {
+      "maxLength": 128,
+      "minLength": 1,
+      "type": "string"
+    },
+    "JsonValue": {},
+    "NonNegativeInt": {
+      "minimum": 0,
+      "type": "integer"
+    },
+    "Observation": {
+      "additionalProperties": false,
+      "properties": {
+        "source": {
+          "$ref": "#/$defs/Id"
+        },
+        "observed_at": {
+          "$ref": "#/$defs/UTCInstant"
+        },
+        "valid_until": {
+          "$ref": "#/$defs/UTCInstant"
+        },
+        "leg_id": {
+          "$ref": "#/$defs/Id"
+        },
+        "field": {
+          "$ref": "#/$defs/ObservationField"
+        },
+        "value": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/UTCInstant"
+            },
+            {
+              "$ref": "#/$defs/JsonValue"
+            }
+          ],
+          "default": null,
+          "title": "Value"
+        },
+        "authority_rank": {
+          "$ref": "#/$defs/NonNegativeInt"
+        },
+        "received_at": {
+          "$ref": "#/$defs/UTCInstant"
+        },
+        "scheduled": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/UTCInstant"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "estimated": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/UTCInstant"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "actual": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/UTCInstant"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "withdrawn": {
+          "default": false,
+          "title": "Withdrawn",
+          "type": "boolean"
+        },
+        "cutoff_estimated": {
+          "default": false,
+          "title": "Cutoff Estimated",
+          "type": "boolean"
+        }
+      },
+      "required": [
+        "source",
+        "observed_at",
+        "valid_until",
+        "leg_id",
+        "field",
+        "authority_rank",
+        "received_at"
+      ],
+      "title": "Observation",
+      "type": "object"
+    },
+    "ObservationField": {
+      "enum": [
+        "gate",
+        "terminal",
+        "concourse",
+        "level",
+        "status",
+        "departure",
+        "arrival",
+        "boarding_cutoff",
+        "carousel"
+      ],
+      "title": "ObservationField",
+      "type": "string"
+    },
+    "UTCInstant": {
+      "format": "date-time",
+      "type": "string"
+    }
+  },
+  "additionalProperties": false,
+  "properties": {
+    "id": {
+      "$ref": "#/$defs/Id"
+    },
+    "operating_carrier": {
+      "$ref": "#/$defs/Id"
+    },
+    "operating_number": {
+      "$ref": "#/$defs/Id"
+    },
+    "scheduled_operation_date": {
+      "format": "date",
+      "title": "Scheduled Operation Date",
+      "type": "string"
+    },
+    "origin": {
+      "$ref": "#/$defs/AirportCode"
+    },
+    "destination": {
+      "$ref": "#/$defs/AirportCode"
+    },
+    "aliases": {
+      "default": [],
+      "items": {
+        "$ref": "#/$defs/Id"
+      },
+      "title": "Aliases",
+      "type": "array"
+    },
+    "provider_leg_id": {
+      "anyOf": [
+        {
+          "$ref": "#/$defs/Id"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null
+    },
+    "codeshare_aliases": {
+      "default": [],
+      "items": {
+        "$ref": "#/$defs/Id"
+      },
+      "title": "Codeshare Aliases",
+      "type": "array"
+    },
+    "scheduled_departure": {
+      "$ref": "#/$defs/UTCInstant"
+    },
+    "scheduled_arrival": {
+      "$ref": "#/$defs/UTCInstant"
+    },
+    "initial_observations": {
+      "default": [],
+      "items": {
+        "$ref": "#/$defs/Observation"
+      },
+      "title": "Initial Observations",
+      "type": "array"
+    }
+  },
+  "required": [
+    "id",
+    "operating_carrier",
+    "operating_number",
+    "scheduled_operation_date",
+    "origin",
+    "destination",
+    "scheduled_departure",
+    "scheduled_arrival"
+  ],
+  "title": "FlightLegFixture",
+  "type": "object"
+}

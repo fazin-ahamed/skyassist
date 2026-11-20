@@ -1,0 +1,6 @@
+{
+  "_review": "unreviewed",
+  "system.aircraft.landing": "الهبوط خلال نحو {wait} دقيقة",
+  "system.aircraft.arrivals": "قادمة إلى دبي",
+  "system.aircraft.sources": "المصادر: {source}"
+}

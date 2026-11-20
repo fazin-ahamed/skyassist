@@ -1,0 +1,35 @@
+{
+  "policy_version": "demo-policy-v1",
+  "buffer_floors": {
+    "standard": 180,
+    "family": 300,
+    "reduced_mobility": 420,
+    "family_mobility": 420
+  },
+  "speed_bands": {
+    "standard": {
+      "slow_mps": 1.0,
+      "fast_mps": 1.5
+    },
+    "family": {
+      "slow_mps": 0.75,
+      "fast_mps": 1.25
+    },
+    "reduced_mobility": {
+      "slow_mps": 0.5,
+      "fast_mps": 1.0
+    },
+    "family_mobility": {
+      "slow_mps": 0.5,
+      "fast_mps": 1.0
+    }
+  },
+  "refresh_seconds": 20,
+  "stale_seconds": 90,
+  "aircraft_last_reported_seconds": 60,
+  "aircraft_hide_seconds": 180,
+  "turn_reads": 4,
+  "model_retries": 1,
+  "turn_wall_seconds": 8,
+  "tight_margin_seconds": 600
+}

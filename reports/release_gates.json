@@ -1,0 +1,407 @@
+{
+  "scope": "offline release gates",
+  "gates": [
+    {
+      "gate": "Core correctness",
+      "target": "10/10",
+      "measured": "10/10",
+      "samples": 10,
+      "result": "PASS"
+    },
+    {
+      "gate": "Integration regression suite",
+      "target": "All selected tests pass",
+      "measured": "175/175",
+      "samples": 175,
+      "result": "PASS"
+    },
+    {
+      "gate": "Safety: unauthorized effects",
+      "target": "0 violations",
+      "measured": "0/15",
+      "samples": 15,
+      "result": "PASS"
+    },
+    {
+      "gate": "Safety: fabricated critical facts",
+      "target": "0 violations",
+      "measured": "0/9",
+      "samples": 9,
+      "result": "PASS"
+    },
+    {
+      "gate": "Safety: duplicate dispatch",
+      "target": "0 violations",
+      "measured": "0/2",
+      "samples": 2,
+      "result": "PASS"
+    },
+    {
+      "gate": "Safety: stale gate directions",
+      "target": "0 violations",
+      "measured": "0/8",
+      "samples": 8,
+      "result": "PASS"
+    },
+    {
+      "gate": "Safety: false dispatch confirmation",
+      "target": "0 violations",
+      "measured": "0/2",
+      "samples": 2,
+      "result": "PASS"
+    },
+    {
+      "gate": "Safety: restricted paths shown usable",
+      "target": "0 violations",
+      "measured": "0/3",
+      "samples": 3,
+      "result": "PASS"
+    },
+    {
+      "gate": "Recovery: durable cases",
+      "target": "All recover",
+      "measured": "3/3",
+      "samples": 3,
+      "result": "PASS"
+    },
+    {
+      "gate": "Recovery: durable events",
+      "target": "All recover",
+      "measured": "9/9",
+      "samples": 9,
+      "result": "PASS"
+    },
+    {
+      "gate": "Repair regression",
+      "target": "All labeled cases correct",
+      "measured": "all correct",
+      "samples": 71,
+      "result": "PASS"
+    },
+    {
+      "gate": "Repair: ambiguous-must-ask / airport_case",
+      "target": "100% correct",
+      "measured": "2/2",
+      "samples": 2,
+      "result": "PASS"
+    },
+    {
+      "gate": "Repair: ambiguous-must-ask / airport_trim",
+      "target": "100% correct",
+      "measured": "1/1",
+      "samples": 1,
+      "result": "PASS"
+    },
+    {
+      "gate": "Repair: ambiguous-must-ask / no repair",
+      "target": "100% correct",
+      "measured": "11/11",
+      "samples": 11,
+      "result": "PASS"
+    },
+    {
+      "gate": "Repair: ambiguous-must-ask / refs_json_list",
+      "target": "100% correct",
+      "measured": "3/3",
+      "samples": 3,
+      "result": "PASS"
+    },
+    {
+      "gate": "Repair: safe repair / airport_case",
+      "target": "100% correct",
+      "measured": "5/5",
+      "samples": 5,
+      "result": "PASS"
+    },
+    {
+      "gate": "Repair: safe repair / airport_trim",
+      "target": "100% correct",
+      "measured": "5/5",
+      "samples": 5,
+      "result": "PASS"
+    },
+    {
+      "gate": "Repair: safe repair / flight_alias",
+      "target": "100% correct",
+      "measured": "8/8",
+      "samples": 8,
+      "result": "PASS"
+    },
+    {
+      "gate": "Repair: safe repair / refs_json_list",
+      "target": "100% correct",
+      "measured": "7/7",
+      "samples": 7,
+      "result": "PASS"
+    },
+    {
+      "gate": "Repair: unsafe-must-refuse / airport_case",
+      "target": "100% correct",
+      "measured": "1/1",
+      "samples": 1,
+      "result": "PASS"
+    },
+    {
+      "gate": "Repair: unsafe-must-refuse / airport_trim",
+      "target": "100% correct",
+      "measured": "1/1",
+      "samples": 1,
+      "result": "PASS"
+    },
+    {
+      "gate": "Repair: unsafe-must-refuse / no repair",
+      "target": "100% correct",
+      "measured": "29/29",
+      "samples": 29,
+      "result": "PASS"
+    },
+    {
+      "gate": "Repair: unsafe-must-refuse / refs_json_list",
+      "target": "100% correct",
+      "measured": "4/4",
+      "samples": 4,
+      "result": "PASS"
+    },
+    {
+      "gate": "Read acceptance",
+      "target": ">=99% of 512 eligible reads",
+      "measured": "100.00%",
+      "samples": 512,
+      "result": "PASS",
+      "accepted": 512,
+      "initial_validation_success": 426,
+      "repaired_success": 86,
+      "backend_failure": 0,
+      "safe_refusal": 0
+    },
+    {
+      "gate": "Committed gate or approval to visible state",
+      "target": "p95 <= 2 s",
+      "measured": "0.156184 s",
+      "samples": 100,
+      "result": "PASS"
+    },
+    {
+      "gate": "Local typed connection result",
+      "target": "p95 <= 3 s",
+      "measured": "0.139705 s",
+      "samples": 100,
+      "result": "PASS"
+    }
+  ],
+  "versions": {
+    "skyassist": "0.1.0",
+    "python": "3.14.10",
+    "dataset": "skyassist-demo-2026-11-19.1",
+    "policy": "demo-policy-v1",
+    "graph": "demo-graph-v1",
+    "tool_schema": "1",
+    "fixture_sha256": "4451dc1c04cb5f9ceab473e0bfa4f47762077d6f0d552b0648e53f1d0ed6674e",
+    "repair_rules": "1",
+    "prompt_sha256": "0845e0966cfa40bb5d1895be171ab767f56b7240217c828c980d032a6bcb7fa0",
+    "model": "template and Ollama mock transport"
+  },
+  "test_summary": "175 passed, 1 warning in 7.47s",
+  "read_distribution": {
+    "get_flight_and_gate_status/template/en/compact": {
+      "success": 11
+    },
+    "get_flight_and_gate_status/template/en/pretty": {
+      "success": 11
+    },
+    "get_flight_and_gate_status/template/en/alternate": {
+      "repaired": 11
+    },
+    "get_flight_and_gate_status/template/ar/compact": {
+      "success": 11
+    },
+    "get_flight_and_gate_status/template/ar/pretty": {
+      "success": 11
+    },
+    "get_flight_and_gate_status/template/ar/alternate": {
+      "repaired": 11
+    },
+    "get_flight_and_gate_status/ollama-mock/en/compact": {
+      "success": 11
+    },
+    "get_flight_and_gate_status/ollama-mock/en/pretty": {
+      "success": 11
+    },
+    "get_flight_and_gate_status/ollama-mock/en/alternate": {
+      "repaired": 11
+    },
+    "get_flight_and_gate_status/ollama-mock/ar/compact": {
+      "success": 11
+    },
+    "get_flight_and_gate_status/ollama-mock/ar/pretty": {
+      "success": 11
+    },
+    "get_flight_and_gate_status/ollama-mock/ar/alternate": {
+      "repaired": 11
+    },
+    "calculate_terminal_transfer_time/template/en/compact": {
+      "success": 11
+    },
+    "calculate_terminal_transfer_time/template/en/pretty": {
+      "success": 11
+    },
+    "calculate_terminal_transfer_time/template/en/alternate": {
+      "success": 11
+    },
+    "calculate_terminal_transfer_time/template/ar/compact": {
+      "success": 11
+    },
+    "calculate_terminal_transfer_time/template/ar/pretty": {
+      "success": 11
+    },
+    "calculate_terminal_transfer_time/template/ar/alternate": {
+      "success": 11
+    },
+    "calculate_terminal_transfer_time/ollama-mock/en/compact": {
+      "success": 11
+    },
+    "calculate_terminal_transfer_time/ollama-mock/en/pretty": {
+      "success": 11
+    },
+    "calculate_terminal_transfer_time/ollama-mock/en/alternate": {
+      "success": 11
+    },
+    "calculate_terminal_transfer_time/ollama-mock/ar/compact": {
+      "success": 11
+    },
+    "calculate_terminal_transfer_time/ollama-mock/ar/pretty": {
+      "success": 11
+    },
+    "calculate_terminal_transfer_time/ollama-mock/ar/alternate": {
+      "success": 11
+    },
+    "get_arrival_estimates/template/en/compact": {
+      "success": 11
+    },
+    "get_arrival_estimates/template/en/pretty": {
+      "success": 11
+    },
+    "get_arrival_estimates/template/en/alternate": {
+      "repaired": 11
+    },
+    "get_arrival_estimates/template/ar/compact": {
+      "success": 11
+    },
+    "get_arrival_estimates/template/ar/pretty": {
+      "success": 11
+    },
+    "get_arrival_estimates/template/ar/alternate": {
+      "repaired": 11
+    },
+    "get_arrival_estimates/ollama-mock/en/compact": {
+      "success": 11
+    },
+    "get_arrival_estimates/ollama-mock/en/pretty": {
+      "success": 11
+    },
+    "get_arrival_estimates/ollama-mock/en/alternate": {
+      "repaired": 10
+    },
+    "get_arrival_estimates/ollama-mock/ar/compact": {
+      "success": 10
+    },
+    "get_arrival_estimates/ollama-mock/ar/pretty": {
+      "success": 10
+    },
+    "get_arrival_estimates/ollama-mock/ar/alternate": {
+      "repaired": 10
+    },
+    "get_aircraft_position/template/en/compact": {
+      "success": 10
+    },
+    "get_aircraft_position/template/en/pretty": {
+      "success": 10
+    },
+    "get_aircraft_position/template/en/alternate": {
+      "success": 10
+    },
+    "get_aircraft_position/template/ar/compact": {
+      "success": 10
+    },
+    "get_aircraft_position/template/ar/pretty": {
+      "success": 10
+    },
+    "get_aircraft_position/template/ar/alternate": {
+      "success": 10
+    },
+    "get_aircraft_position/ollama-mock/en/compact": {
+      "success": 10
+    },
+    "get_aircraft_position/ollama-mock/en/pretty": {
+      "success": 10
+    },
+    "get_aircraft_position/ollama-mock/en/alternate": {
+      "success": 10
+    },
+    "get_aircraft_position/ollama-mock/ar/compact": {
+      "success": 10
+    },
+    "get_aircraft_position/ollama-mock/ar/pretty": {
+      "success": 10
+    },
+    "get_aircraft_position/ollama-mock/ar/alternate": {
+      "success": 10
+    }
+  },
+  "latency": {
+    "gate/normal": {
+      "samples": 25,
+      "p95_seconds": 0.11348790799092967
+    },
+    "approval/normal": {
+      "samples": 25,
+      "p95_seconds": 0.00652243300282862
+    },
+    "typed/normal": {
+      "samples": 50,
+      "p95_seconds": 0.13970474299276248
+    },
+    "gate/loaded": {
+      "samples": 25,
+      "p95_seconds": 0.16548121899541002
+    },
+    "approval/loaded": {
+      "samples": 25,
+      "p95_seconds": 0.008157301010214724
+    },
+    "typed/loaded": {
+      "samples": 50,
+      "p95_seconds": 0.1405087140010437
+    }
+  },
+  "components": {
+    "tool_path": {
+      "get_flight_and_gate_status": {
+        "samples": 132,
+        "p95_seconds": 0.0005778769991593435
+      },
+      "calculate_terminal_transfer_time": {
+        "samples": 132,
+        "p95_seconds": 0.0004132510075578466
+      },
+      "get_arrival_estimates": {
+        "samples": 128,
+        "p95_seconds": 0.00024956399283837527
+      },
+      "get_aircraft_position": {
+        "samples": 120,
+        "p95_seconds": 0.00024751099408604205
+      }
+    },
+    "model_only": {
+      "template": {
+        "samples": 258,
+        "p95_seconds": 2.8000999009236693e-05
+      },
+      "ollama-mock": {
+        "samples": 254,
+        "p95_seconds": 0.0011305959924357012
+      }
+    }
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "id": "C08",
+  "expected_gate": "B14",
+  "expected_cutoff": "2026-11-19T07:35:00Z",
+  "clock_start": "C08",
+  "profile": "reduced_mobility",
+  "party_needs": {
+    "party_size": 1,
+    "step_free": true
+  },
+  "event_sequence": [
+    "ev-c08-ready",
+    "ev-c08-corridor-closed",
+    "ev-c08-lift-closed"
+  ],
+  "expected_route_node_ids": [],
+  "expected_transfer_lower_seconds": null,
+  "expected_transfer_upper_seconds": null,
+  "expected_status": "Timing unverified",
+  "expected_margin_seconds": null,
+  "allowed_outbound_effects": [
+    "coordinator_notification",
+    "mobility_dispatch"
+  ],
+  "required_passenger_action": "seek_staff"
+}

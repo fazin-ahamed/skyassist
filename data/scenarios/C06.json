@@ -1,0 +1,26 @@
+{
+  "id": "C06",
+  "expected_gate": "B18",
+  "expected_cutoff": "2026-11-19T06:40:00Z",
+  "clock_start": "C06",
+  "profile": "standard",
+  "party_needs": {
+    "party_size": 1
+  },
+  "event_sequence": [
+    "ev-c06-ready",
+    "ev-c06-conflict-a",
+    "ev-c06-conflict-b",
+    "ev-c06-resolve"
+  ],
+  "expected_route_node_ids": [
+    "b_hall",
+    "b18"
+  ],
+  "expected_transfer_lower_seconds": 320,
+  "expected_transfer_upper_seconds": 390,
+  "expected_status": "Time available",
+  "expected_margin_seconds": 1970,
+  "allowed_outbound_effects": [],
+  "required_passenger_action": "follow_route"
+}

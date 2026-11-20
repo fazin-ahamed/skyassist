@@ -1,0 +1,387 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$defs": {
+    "AccessibleMode": {
+      "enum": [
+        "walk",
+        "step_free",
+        "stairs",
+        "lift",
+        "transit",
+        "checkpoint",
+        "staff_handoff"
+      ],
+      "title": "AccessibleMode",
+      "type": "string"
+    },
+    "AirportCode": {
+      "pattern": "^[A-Z]{3}$",
+      "type": "string"
+    },
+    "Confirmed": {
+      "const": true,
+      "type": "boolean"
+    },
+    "Edge": {
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "$ref": "#/$defs/Id"
+        },
+        "from_node_id": {
+          "$ref": "#/$defs/Id"
+        },
+        "to_node_id": {
+          "$ref": "#/$defs/Id"
+        },
+        "directed": {
+          "$ref": "#/$defs/Confirmed",
+          "default": true
+        },
+        "distance_m": {
+          "minimum": 0,
+          "title": "Distance M",
+          "type": "number"
+        },
+        "steps": {
+          "$ref": "#/$defs/NonNegativeInt",
+          "default": 0
+        },
+        "slope": {
+          "default": 0,
+          "title": "Slope",
+          "type": "number"
+        },
+        "lift": {
+          "default": false,
+          "title": "Lift",
+          "type": "boolean"
+        },
+        "allowed_flows": {
+          "items": {
+            "$ref": "#/$defs/PassengerFlow"
+          },
+          "minItems": 1,
+          "title": "Allowed Flows",
+          "type": "array"
+        },
+        "wait": {
+          "$ref": "#/$defs/SecondsRange",
+          "default": {
+            "lower": 0,
+            "upper": 0
+          }
+        },
+        "fixed_movement": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/SecondsRange"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "accessible": {
+          "title": "Accessible",
+          "type": "boolean"
+        },
+        "open_windows": {
+          "default": [],
+          "items": {
+            "$ref": "#/$defs/TimeWindow"
+          },
+          "title": "Open Windows",
+          "type": "array"
+        },
+        "closed": {
+          "default": false,
+          "title": "Closed",
+          "type": "boolean"
+        },
+        "restricted": {
+          "default": false,
+          "title": "Restricted",
+          "type": "boolean"
+        },
+        "requires_access_evidence": {
+          "default": false,
+          "title": "Requires Access Evidence",
+          "type": "boolean"
+        },
+        "queue_id": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/Id"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "mode": {
+          "$ref": "#/$defs/AccessibleMode",
+          "default": "walk"
+        },
+        "shape": {
+          "default": [],
+          "items": {
+            "$ref": "#/$defs/MapPoint"
+          },
+          "title": "Shape",
+          "type": "array"
+        }
+      },
+      "required": [
+        "id",
+        "from_node_id",
+        "to_node_id",
+        "distance_m",
+        "allowed_flows",
+        "accessible"
+      ],
+      "title": "Edge",
+      "type": "object"
+    },
+    "FloorShape": {
+      "additionalProperties": false,
+      "properties": {
+        "terminal": {
+          "$ref": "#/$defs/Id"
+        },
+        "concourse": {
+          "$ref": "#/$defs/Id"
+        },
+        "floor": {
+          "$ref": "#/$defs/Id"
+        },
+        "points": {
+          "items": {
+            "$ref": "#/$defs/MapPoint"
+          },
+          "minItems": 2,
+          "title": "Points",
+          "type": "array"
+        }
+      },
+      "required": [
+        "terminal",
+        "concourse",
+        "floor",
+        "points"
+      ],
+      "title": "FloorShape",
+      "type": "object"
+    },
+    "I18nText": {
+      "additionalProperties": false,
+      "properties": {
+        "key": {
+          "$ref": "#/$defs/TranslationKey"
+        },
+        "params": {
+          "additionalProperties": {
+            "$ref": "#/$defs/JsonValue"
+          },
+          "title": "Params",
+          "type": "object"
+        }
+      },
+      "required": [
+        "key"
+      ],
+      "title": "I18nText",
+      "type": "object"
+    },
+    "Id": {
+      "maxLength": 128,
+      "minLength": 1,
+      "type": "string"
+    },
+    "JsonValue": {},
+    "MapPoint": {
+      "additionalProperties": false,
+      "properties": {
+        "x": {
+          "title": "X",
+          "type": "number"
+        },
+        "y": {
+          "title": "Y",
+          "type": "number"
+        }
+      },
+      "required": [
+        "x",
+        "y"
+      ],
+      "title": "MapPoint",
+      "type": "object"
+    },
+    "Node": {
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "$ref": "#/$defs/Id"
+        },
+        "airport": {
+          "$ref": "#/$defs/AirportCode"
+        },
+        "terminal": {
+          "$ref": "#/$defs/Id"
+        },
+        "concourse": {
+          "$ref": "#/$defs/Id"
+        },
+        "floor": {
+          "$ref": "#/$defs/Id"
+        },
+        "security_zone": {
+          "$ref": "#/$defs/Id"
+        },
+        "landmark": {
+          "$ref": "#/$defs/I18nText"
+        },
+        "x": {
+          "title": "X",
+          "type": "number"
+        },
+        "y": {
+          "title": "Y",
+          "type": "number"
+        },
+        "public": {
+          "default": true,
+          "title": "Public",
+          "type": "boolean"
+        },
+        "pickup_eligible": {
+          "default": false,
+          "title": "Pickup Eligible",
+          "type": "boolean"
+        }
+      },
+      "required": [
+        "id",
+        "airport",
+        "terminal",
+        "concourse",
+        "floor",
+        "security_zone",
+        "landmark",
+        "x",
+        "y"
+      ],
+      "title": "Node",
+      "type": "object"
+    },
+    "NonNegativeInt": {
+      "minimum": 0,
+      "type": "integer"
+    },
+    "PassengerFlow": {
+      "enum": [
+        "connecting",
+        "exiting",
+        "departing"
+      ],
+      "title": "PassengerFlow",
+      "type": "string"
+    },
+    "Seconds": {
+      "minimum": 0,
+      "type": "integer"
+    },
+    "SecondsRange": {
+      "additionalProperties": false,
+      "properties": {
+        "lower": {
+          "$ref": "#/$defs/Seconds"
+        },
+        "upper": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/Seconds"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        }
+      },
+      "required": [
+        "lower",
+        "upper"
+      ],
+      "title": "SecondsRange",
+      "type": "object"
+    },
+    "TimeWindow": {
+      "additionalProperties": false,
+      "properties": {
+        "start": {
+          "$ref": "#/$defs/UTCInstant"
+        },
+        "end": {
+          "$ref": "#/$defs/UTCInstant"
+        }
+      },
+      "required": [
+        "start",
+        "end"
+      ],
+      "title": "TimeWindow",
+      "type": "object"
+    },
+    "TranslationKey": {
+      "pattern": "^[a-z][a-z0-9_]*(\\.[A-Za-z0-9_]+)+$",
+      "type": "string"
+    },
+    "UTCInstant": {
+      "format": "date-time",
+      "type": "string"
+    }
+  },
+  "additionalProperties": false,
+  "properties": {
+    "airport": {
+      "$ref": "#/$defs/AirportCode"
+    },
+    "graph_version": {
+      "$ref": "#/$defs/Id"
+    },
+    "nodes": {
+      "items": {
+        "$ref": "#/$defs/Node"
+      },
+      "minItems": 1,
+      "title": "Nodes",
+      "type": "array"
+    },
+    "edges": {
+      "items": {
+        "$ref": "#/$defs/Edge"
+      },
+      "title": "Edges",
+      "type": "array"
+    },
+    "floor_shapes": {
+      "default": [],
+      "items": {
+        "$ref": "#/$defs/FloorShape"
+      },
+      "title": "Floor Shapes",
+      "type": "array"
+    }
+  },
+  "required": [
+    "airport",
+    "graph_version",
+    "nodes",
+    "edges"
+  ],
+  "title": "FixtureGraph",
+  "type": "object"
+}

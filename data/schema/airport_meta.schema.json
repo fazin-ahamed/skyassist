@@ -1,0 +1,105 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$defs": {
+    "AircraftPosition": {
+      "additionalProperties": false,
+      "properties": {
+        "latitude": {
+          "maximum": 90,
+          "minimum": -90,
+          "title": "Latitude",
+          "type": "number"
+        },
+        "longitude": {
+          "maximum": 180,
+          "minimum": -180,
+          "title": "Longitude",
+          "type": "number"
+        },
+        "altitude_m": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Altitude M"
+        }
+      },
+      "required": [
+        "latitude",
+        "longitude"
+      ],
+      "title": "AircraftPosition",
+      "type": "object"
+    },
+    "AirportCode": {
+      "pattern": "^[A-Z]{3}$",
+      "type": "string"
+    },
+    "I18nText": {
+      "additionalProperties": false,
+      "properties": {
+        "key": {
+          "$ref": "#/$defs/TranslationKey"
+        },
+        "params": {
+          "additionalProperties": {
+            "$ref": "#/$defs/JsonValue"
+          },
+          "title": "Params",
+          "type": "object"
+        }
+      },
+      "required": [
+        "key"
+      ],
+      "title": "I18nText",
+      "type": "object"
+    },
+    "Id": {
+      "maxLength": 128,
+      "minLength": 1,
+      "type": "string"
+    },
+    "JsonValue": {},
+    "TranslationKey": {
+      "pattern": "^[a-z][a-z0-9_]*(\\.[A-Za-z0-9_]+)+$",
+      "type": "string"
+    }
+  },
+  "additionalProperties": false,
+  "properties": {
+    "airport": {
+      "$ref": "#/$defs/AirportCode"
+    },
+    "name": {
+      "$ref": "#/$defs/I18nText"
+    },
+    "timezone": {
+      "$ref": "#/$defs/Id",
+      "default": "Asia/Dubai"
+    },
+    "centroid": {
+      "$ref": "#/$defs/AircraftPosition"
+    },
+    "source": {
+      "$ref": "#/$defs/Id"
+    },
+    "source_revision": {
+      "$ref": "#/$defs/Id"
+    }
+  },
+  "required": [
+    "airport",
+    "name",
+    "centroid",
+    "source",
+    "source_revision"
+  ],
+  "title": "AirportMeta",
+  "type": "object"
+}

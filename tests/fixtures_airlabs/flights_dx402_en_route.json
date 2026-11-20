@@ -1,0 +1,25 @@
+[
+  {
+    "hex": "06A1B2",
+    "reg_number": "A6-EXX",
+    "flag": "AE",
+    "lat": 24.8,
+    "lng": 55.9,
+    "alt": 10500,
+    "dir": 270,
+    "speed": 800,
+    "v_speed": 0,
+    "squawk": "2051",
+    "airline_iata": "DX",
+    "airline_icao": "DXA",
+    "flight_iata": "DX402",
+    "flight_icao": "DXA402",
+    "flight_number": "402",
+    "dep_iata": "DXB",
+    "dep_icao": "OMDB",
+    "arr_iata": "AUH",
+    "arr_icao": "OMAA",
+    "updated": 1795067970,
+    "status": "en-route"
+  }
+]

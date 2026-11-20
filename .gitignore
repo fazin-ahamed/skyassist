@@ -1,0 +1,36 @@
+# environments and caches
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+.hypothesis/
+.ruff_cache/
+node_modules/
+
+# front end build output (built by ./run_demo.sh up)
+.next/
+web/out/
+web/tsconfig.tsbuildinfo
+
+# local runtime state
+run/
+.env
+data/*.sqlite3
+data/*.sqlite3-*
+
+# editor, agent tooling and machine dotfiles that live in this folder
+.idea
+.vscode
+.claude
+.mcp.json
+.impeccable/review/
+.impeccable/mocks/
+.impeccable/build/
+/.bash_profile
+/.bashrc
+/.gitconfig
+/.gitmodules
+/.profile
+/.ripgreprc
+/.zprofile
+/.zshrc

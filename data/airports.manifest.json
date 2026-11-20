@@ -1,0 +1,13 @@
+{
+  "dataset": "OurAirports airports.csv",
+  "source_repo": "https://github.com/davidmegginson/ourairports-data",
+  "source_file": "airports.csv",
+  "commit_sha": "0232ba97e90a8784258495da8ea7b3b9b9ceeff3",
+  "retrieved": "2026-11-19",
+  "license": "Public domain (per the dataset)",
+  "records": ["DXB", "AUH", "DWC", "SHJ"],
+  "notes": [
+    "terminal and gate geometry is NOT in this dataset",
+    "timezone is not a column in airports.csv; Asia/Dubai was set by hand for all four records"
+  ]
+}

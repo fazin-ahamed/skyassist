@@ -1,0 +1,26 @@
+[
+  {
+    "hex": "06A1B2",
+    "flag": "AE",
+    "lat": 24.8,
+    "lng": 55.9,
+    "alt": 10500,
+    "flight_iata": "DX402",
+    "dep_iata": "DXB",
+    "arr_iata": "AUH",
+    "updated": 1795067970,
+    "status": "en-route"
+  },
+  {
+    "hex": "06C3D4",
+    "flag": "AE",
+    "lat": 24.6,
+    "lng": 55.4,
+    "alt": 9800,
+    "flight_iata": "DX402",
+    "dep_iata": "DXB",
+    "arr_iata": "AUH",
+    "updated": 1795067968,
+    "status": "en-route"
+  }
+]

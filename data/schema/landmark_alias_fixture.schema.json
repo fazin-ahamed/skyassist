@@ -1,0 +1,41 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$defs": {
+    "AirportCode": {
+      "pattern": "^[A-Z]{3}$",
+      "type": "string"
+    },
+    "Id": {
+      "maxLength": 128,
+      "minLength": 1,
+      "type": "string"
+    }
+  },
+  "additionalProperties": false,
+  "properties": {
+    "airport": {
+      "$ref": "#/$defs/AirportCode"
+    },
+    "node_id": {
+      "$ref": "#/$defs/Id"
+    },
+    "alias": {
+      "$ref": "#/$defs/Id"
+    },
+    "language": {
+      "$ref": "#/$defs/Id",
+      "default": "en"
+    },
+    "source": {
+      "$ref": "#/$defs/Id"
+    }
+  },
+  "required": [
+    "airport",
+    "node_id",
+    "alias",
+    "source"
+  ],
+  "title": "LandmarkAliasFixture",
+  "type": "object"
+}

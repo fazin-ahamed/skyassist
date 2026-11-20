@@ -1,0 +1,966 @@
+[
+  {
+    "id": "dx402-1119-in",
+    "operating_carrier": "DX",
+    "operating_number": "402",
+    "scheduled_operation_date": "2026-11-19",
+    "origin": "AUH",
+    "destination": "DXB",
+    "aliases": [
+      "DXB-402",
+      "DX402"
+    ],
+    "provider_leg_id": "prov-dx402-1119",
+    "codeshare_aliases": [],
+    "scheduled_departure": "2026-11-19T04:10:00Z",
+    "scheduled_arrival": "2026-11-19T05:15:00Z",
+    "initial_observations": [
+      {
+        "source": "airline-ops-feed",
+        "observed_at": "2026-11-19T04:00:00Z",
+        "valid_until": "2026-11-20T06:00:00Z",
+        "leg_id": "dx402-1119-in",
+        "field": "arrival",
+        "value": null,
+        "authority_rank": 1,
+        "received_at": "2026-11-19T04:00:02Z",
+        "scheduled": "2026-11-19T05:15:00Z",
+        "estimated": "2026-11-19T05:15:00Z",
+        "actual": null,
+        "withdrawn": false,
+        "cutoff_estimated": false
+      }
+    ]
+  },
+  {
+    "id": "zx502-1119-in",
+    "operating_carrier": "ZX",
+    "operating_number": "502",
+    "scheduled_operation_date": "2026-11-19",
+    "origin": "SHJ",
+    "destination": "DXB",
+    "aliases": [
+      "ZX502"
+    ],
+    "provider_leg_id": null,
+    "codeshare_aliases": [],
+    "scheduled_departure": "2026-11-19T04:35:00Z",
+    "scheduled_arrival": "2026-11-19T05:30:00Z",
+    "initial_observations": [
+      {
+        "source": "airline-ops-feed",
+        "observed_at": "2026-11-19T04:00:00Z",
+        "valid_until": "2026-11-20T06:00:00Z",
+        "leg_id": "zx502-1119-in",
+        "field": "arrival",
+        "value": null,
+        "authority_rank": 1,
+        "received_at": "2026-11-19T04:00:02Z",
+        "scheduled": "2026-11-19T05:30:00Z",
+        "estimated": "2026-11-19T05:30:00Z",
+        "actual": null,
+        "withdrawn": false,
+        "cutoff_estimated": false
+      }
+    ]
+  },
+  {
+    "id": "zx503-1119-in",
+    "operating_carrier": "ZX",
+    "operating_number": "503",
+    "scheduled_operation_date": "2026-11-19",
+    "origin": "DWC",
+    "destination": "DXB",
+    "aliases": [
+      "ZX503"
+    ],
+    "provider_leg_id": null,
+    "codeshare_aliases": [],
+    "scheduled_departure": "2026-11-19T04:20:00Z",
+    "scheduled_arrival": "2026-11-19T05:25:00Z",
+    "initial_observations": [
+      {
+        "source": "airline-ops-feed",
+        "observed_at": "2026-11-19T04:00:00Z",
+        "valid_until": "2026-11-20T06:00:00Z",
+        "leg_id": "zx503-1119-in",
+        "field": "arrival",
+        "value": null,
+        "authority_rank": 1,
+        "received_at": "2026-11-19T04:00:02Z",
+        "scheduled": "2026-11-19T05:25:00Z",
+        "estimated": "2026-11-19T05:25:00Z",
+        "actual": null,
+        "withdrawn": false,
+        "cutoff_estimated": false
+      }
+    ]
+  },
+  {
+    "id": "zx504-1119-in",
+    "operating_carrier": "ZX",
+    "operating_number": "504",
+    "scheduled_operation_date": "2026-11-19",
+    "origin": "AUH",
+    "destination": "DXB",
+    "aliases": [
+      "ZX504"
+    ],
+    "provider_leg_id": null,
+    "codeshare_aliases": [],
+    "scheduled_departure": "2026-11-19T04:00:00Z",
+    "scheduled_arrival": "2026-11-19T05:05:00Z",
+    "initial_observations": [
+      {
+        "source": "airline-ops-feed",
+        "observed_at": "2026-11-19T04:00:00Z",
+        "valid_until": "2026-11-20T06:00:00Z",
+        "leg_id": "zx504-1119-in",
+        "field": "arrival",
+        "value": null,
+        "authority_rank": 1,
+        "received_at": "2026-11-19T04:00:02Z",
+        "scheduled": "2026-11-19T05:05:00Z",
+        "estimated": "2026-11-19T05:05:00Z",
+        "actual": null,
+        "withdrawn": false,
+        "cutoff_estimated": false
+      }
+    ]
+  },
+  {
+    "id": "zx505-1119-in",
+    "operating_carrier": "ZX",
+    "operating_number": "505",
+    "scheduled_operation_date": "2026-11-19",
+    "origin": "AUH",
+    "destination": "DXB",
+    "aliases": [
+      "ZX505"
+    ],
+    "provider_leg_id": null,
+    "codeshare_aliases": [],
+    "scheduled_departure": "2026-11-19T04:50:00Z",
+    "scheduled_arrival": "2026-11-19T05:55:00Z",
+    "initial_observations": [
+      {
+        "source": "airline-ops-feed",
+        "observed_at": "2026-11-19T04:00:00Z",
+        "valid_until": "2026-11-20T06:00:00Z",
+        "leg_id": "zx505-1119-in",
+        "field": "arrival",
+        "value": null,
+        "authority_rank": 1,
+        "received_at": "2026-11-19T04:00:02Z",
+        "scheduled": "2026-11-19T05:55:00Z",
+        "estimated": "2026-11-19T05:55:00Z",
+        "actual": null,
+        "withdrawn": false,
+        "cutoff_estimated": false
+      }
+    ]
+  },
+  {
+    "id": "zx506-1119-in",
+    "operating_carrier": "ZX",
+    "operating_number": "506",
+    "scheduled_operation_date": "2026-11-19",
+    "origin": "SHJ",
+    "destination": "DXB",
+    "aliases": [
+      "ZX506"
+    ],
+    "provider_leg_id": null,
+    "codeshare_aliases": [],
+    "scheduled_departure": "2026-11-19T04:05:00Z",
+    "scheduled_arrival": "2026-11-19T05:10:00Z",
+    "initial_observations": [
+      {
+        "source": "airline-ops-feed",
+        "observed_at": "2026-11-19T04:00:00Z",
+        "valid_until": "2026-11-20T06:00:00Z",
+        "leg_id": "zx506-1119-in",
+        "field": "arrival",
+        "value": null,
+        "authority_rank": 1,
+        "received_at": "2026-11-19T04:00:02Z",
+        "scheduled": "2026-11-19T05:10:00Z",
+        "estimated": "2026-11-19T05:10:00Z",
+        "actual": null,
+        "withdrawn": false,
+        "cutoff_estimated": false
+      }
+    ]
+  },
+  {
+    "id": "zx507-1119-in",
+    "operating_carrier": "ZX",
+    "operating_number": "507",
+    "scheduled_operation_date": "2026-11-19",
+    "origin": "DWC",
+    "destination": "DXB",
+    "aliases": [
+      "ZX507"
+    ],
+    "provider_leg_id": null,
+    "codeshare_aliases": [],
+    "scheduled_departure": "2026-11-19T04:40:00Z",
+    "scheduled_arrival": "2026-11-19T05:45:00Z",
+    "initial_observations": [
+      {
+        "source": "airline-ops-feed",
+        "observed_at": "2026-11-19T04:00:00Z",
+        "valid_until": "2026-11-20T06:00:00Z",
+        "leg_id": "zx507-1119-in",
+        "field": "arrival",
+        "value": null,
+        "authority_rank": 1,
+        "received_at": "2026-11-19T04:00:02Z",
+        "scheduled": "2026-11-19T05:45:00Z",
+        "estimated": "2026-11-19T05:45:00Z",
+        "actual": null,
+        "withdrawn": false,
+        "cutoff_estimated": false
+      }
+    ]
+  },
+  {
+    "id": "zx508-1119-in",
+    "operating_carrier": "ZX",
+    "operating_number": "508",
+    "scheduled_operation_date": "2026-11-19",
+    "origin": "AUH",
+    "destination": "DXB",
+    "aliases": [
+      "ZX508"
+    ],
+    "provider_leg_id": null,
+    "codeshare_aliases": [],
+    "scheduled_departure": "2026-11-19T04:15:00Z",
+    "scheduled_arrival": "2026-11-19T05:20:00Z",
+    "initial_observations": [
+      {
+        "source": "airline-ops-feed",
+        "observed_at": "2026-11-19T04:00:00Z",
+        "valid_until": "2026-11-20T06:00:00Z",
+        "leg_id": "zx508-1119-in",
+        "field": "arrival",
+        "value": null,
+        "authority_rank": 1,
+        "received_at": "2026-11-19T04:00:02Z",
+        "scheduled": "2026-11-19T05:20:00Z",
+        "estimated": "2026-11-19T05:20:00Z",
+        "actual": null,
+        "withdrawn": false,
+        "cutoff_estimated": false
+      }
+    ]
+  },
+  {
+    "id": "zx509-1119-in",
+    "operating_carrier": "ZX",
+    "operating_number": "509",
+    "scheduled_operation_date": "2026-11-19",
+    "origin": "AUH",
+    "destination": "DXB",
+    "aliases": [
+      "ZX509"
+    ],
+    "provider_leg_id": null,
+    "codeshare_aliases": [],
+    "scheduled_departure": "2026-11-19T18:20:00Z",
+    "scheduled_arrival": "2026-11-19T19:20:00Z",
+    "initial_observations": [
+      {
+        "source": "airline-ops-feed",
+        "observed_at": "2026-11-19T04:00:00Z",
+        "valid_until": "2026-11-20T06:00:00Z",
+        "leg_id": "zx509-1119-in",
+        "field": "arrival",
+        "value": null,
+        "authority_rank": 1,
+        "received_at": "2026-11-19T04:00:02Z",
+        "scheduled": "2026-11-19T19:20:00Z",
+        "estimated": "2026-11-19T19:20:00Z",
+        "actual": null,
+        "withdrawn": false,
+        "cutoff_estimated": false
+      }
+    ]
+  },
+  {
+    "id": "zx510-1119-in",
+    "operating_carrier": "ZX",
+    "operating_number": "510",
+    "scheduled_operation_date": "2026-11-19",
+    "origin": "SHJ",
+    "destination": "DXB",
+    "aliases": [
+      "ZX510"
+    ],
+    "provider_leg_id": null,
+    "codeshare_aliases": [],
+    "scheduled_departure": "2026-11-19T04:30:00Z",
+    "scheduled_arrival": "2026-11-19T05:35:00Z",
+    "initial_observations": [
+      {
+        "source": "airline-ops-feed",
+        "observed_at": "2026-11-19T04:00:00Z",
+        "valid_until": "2026-11-20T06:00:00Z",
+        "leg_id": "zx510-1119-in",
+        "field": "arrival",
+        "value": null,
+        "authority_rank": 1,
+        "received_at": "2026-11-19T04:00:02Z",
+        "scheduled": "2026-11-19T05:35:00Z",
+        "estimated": "2026-11-19T05:35:00Z",
+        "actual": null,
+        "withdrawn": false,
+        "cutoff_estimated": false
+      }
+    ]
+  },
+  {
+    "id": "zx003-1119-in",
+    "operating_carrier": "ZX",
+    "operating_number": "003",
+    "scheduled_operation_date": "2026-11-19",
+    "origin": "AUH",
+    "destination": "DXB",
+    "aliases": [
+      "ZX003"
+    ],
+    "provider_leg_id": null,
+    "codeshare_aliases": [],
+    "scheduled_departure": "2026-11-19T19:15:00Z",
+    "scheduled_arrival": "2026-11-19T20:20:00Z",
+    "initial_observations": [
+      {
+        "source": "airline-ops-feed",
+        "observed_at": "2026-11-19T04:00:00Z",
+        "valid_until": "2026-11-20T06:00:00Z",
+        "leg_id": "zx003-1119-in",
+        "field": "arrival",
+        "value": null,
+        "authority_rank": 1,
+        "received_at": "2026-11-19T04:00:02Z",
+        "scheduled": "2026-11-19T20:20:00Z",
+        "estimated": "2026-11-19T20:20:00Z",
+        "actual": null,
+        "withdrawn": false,
+        "cutoff_estimated": false
+      }
+    ]
+  },
+  {
+    "id": "zx515-1119-out",
+    "operating_carrier": "ZX",
+    "operating_number": "515",
+    "scheduled_operation_date": "2026-11-19",
+    "origin": "DXB",
+    "destination": "AUH",
+    "aliases": [
+      "ZX515"
+    ],
+    "provider_leg_id": null,
+    "codeshare_aliases": [
+      "ZY515"
+    ],
+    "scheduled_departure": "2026-11-19T07:10:00Z",
+    "scheduled_arrival": "2026-11-19T08:10:00Z",
+    "initial_observations": [
+      {
+        "source": "airline-ops-feed",
+        "observed_at": "2026-11-19T04:00:00Z",
+        "valid_until": "2026-11-20T06:00:00Z",
+        "leg_id": "zx515-1119-out",
+        "field": "departure",
+        "value": null,
+        "authority_rank": 1,
+        "received_at": "2026-11-19T04:00:02Z",
+        "scheduled": "2026-11-19T07:10:00Z",
+        "estimated": "2026-11-19T07:10:00Z",
+        "actual": null,
+        "withdrawn": false,
+        "cutoff_estimated": false
+      },
+      {
+        "source": "gate-feed-a",
+        "observed_at": "2026-11-19T06:00:00Z",
+        "valid_until": "2026-11-20T06:00:00Z",
+        "leg_id": "zx515-1119-out",
+        "field": "gate",
+        "value": "B12",
+        "authority_rank": 1,
+        "received_at": "2026-11-19T06:00:00Z",
+        "scheduled": null,
+        "estimated": null,
+        "actual": null,
+        "withdrawn": false,
+        "cutoff_estimated": false
+      },
+      {
+        "source": "airline-ops-feed",
+        "observed_at": "2026-11-19T06:00:00Z",
+        "valid_until": "2026-11-20T06:00:00Z",
+        "leg_id": "zx515-1119-out",
+        "field": "boarding_cutoff",
+        "value": "2026-11-19T06:35:00Z",
+        "authority_rank": 1,
+        "received_at": "2026-11-19T06:00:00Z",
+        "scheduled": null,
+        "estimated": null,
+        "actual": null,
+        "withdrawn": false,
+        "cutoff_estimated": false
+      }
+    ]
+  },
+  {
+    "id": "zx730-1119-out",
+    "operating_carrier": "ZX",
+    "operating_number": "730",
+    "scheduled_operation_date": "2026-11-19",
+    "origin": "DXB",
+    "destination": "SHJ",
+    "aliases": [
+      "ZX730"
+    ],
+    "provider_leg_id": null,
+    "codeshare_aliases": [],
+    "scheduled_departure": "2026-11-19T06:55:00Z",
+    "scheduled_arrival": "2026-11-19T07:20:00Z",
+    "initial_observations": [
+      {
+        "source": "airline-ops-feed",
+        "observed_at": "2026-11-19T04:00:00Z",
+        "valid_until": "2026-11-20T06:00:00Z",
+        "leg_id": "zx730-1119-out",
+        "field": "departure",
+        "value": null,
+        "authority_rank": 1,
+        "received_at": "2026-11-19T04:00:02Z",
+        "scheduled": "2026-11-19T06:55:00Z",
+        "estimated": "2026-11-19T06:55:00Z",
+        "actual": null,
+        "withdrawn": false,
+        "cutoff_estimated": false
+      },
+      {
+        "source": "gate-feed-a",
+        "observed_at": "2026-11-19T06:00:00Z",
+        "valid_until": "2026-11-20T06:00:00Z",
+        "leg_id": "zx730-1119-out",
+        "field": "gate",
+        "value": "B14",
+        "authority_rank": 1,
+        "received_at": "2026-11-19T06:00:00Z",
+        "scheduled": null,
+        "estimated": null,
+        "actual": null,
+        "withdrawn": false,
+        "cutoff_estimated": false
+      },
+      {
+        "source": "airline-ops-feed",
+        "observed_at": "2026-11-19T06:00:00Z",
+        "valid_until": "2026-11-20T06:00:00Z",
+        "leg_id": "zx730-1119-out",
+        "field": "boarding_cutoff",
+        "value": "2026-11-19T06:32:00Z",
+        "authority_rank": 1,
+        "received_at": "2026-11-19T06:00:00Z",
+        "scheduled": null,
+        "estimated": null,
+        "actual": null,
+        "withdrawn": false,
+        "cutoff_estimated": false
+      }
+    ]
+  },
+  {
+    "id": "zx310-1119-out",
+    "operating_carrier": "ZX",
+    "operating_number": "310",
+    "scheduled_operation_date": "2026-11-19",
+    "origin": "DXB",
+    "destination": "DWC",
+    "aliases": [
+      "ZX310"
+    ],
+    "provider_leg_id": null,
+    "codeshare_aliases": [
+      "ZY310"
+    ],
+    "scheduled_departure": "2026-11-19T07:05:00Z",
+    "scheduled_arrival": "2026-11-19T07:40:00Z",
+    "initial_observations": [
+      {
+        "source": "airline-ops-feed",
+        "observed_at": "2026-11-19T04:00:00Z",
+        "valid_until": "2026-11-20T06:00:00Z",
+        "leg_id": "zx310-1119-out",
+        "field": "departure",
+        "value": null,
+        "authority_rank": 1,
+        "received_at": "2026-11-19T04:00:02Z",
+        "scheduled": "2026-11-19T07:05:00Z",
+        "estimated": "2026-11-19T07:05:00Z",
+        "actual": null,
+        "withdrawn": false,
+        "cutoff_estimated": false
+      },
+      {
+        "source": "gate-feed-a",
+        "observed_at": "2026-11-19T06:00:00Z",
+        "valid_until": "2026-11-20T06:00:00Z",
+        "leg_id": "zx310-1119-out",
+        "field": "gate",
+        "value": "B14",
+        "authority_rank": 1,
+        "received_at": "2026-11-19T06:00:00Z",
+        "scheduled": null,
+        "estimated": null,
+        "actual": null,
+        "withdrawn": false,
+        "cutoff_estimated": false
+      },
+      {
+        "source": "airline-ops-feed",
+        "observed_at": "2026-11-19T06:00:00Z",
+        "valid_until": "2026-11-20T06:00:00Z",
+        "leg_id": "zx310-1119-out",
+        "field": "boarding_cutoff",
+        "value": "2026-11-19T06:40:00Z",
+        "authority_rank": 1,
+        "received_at": "2026-11-19T06:00:00Z",
+        "scheduled": null,
+        "estimated": null,
+        "actual": null,
+        "withdrawn": false,
+        "cutoff_estimated": false
+      }
+    ]
+  },
+  {
+    "id": "zx322-1119-out",
+    "operating_carrier": "ZX",
+    "operating_number": "322",
+    "scheduled_operation_date": "2026-11-19",
+    "origin": "DXB",
+    "destination": "AUH",
+    "aliases": [
+      "ZX322"
+    ],
+    "provider_leg_id": null,
+    "codeshare_aliases": [],
+    "scheduled_departure": "2026-11-19T07:15:00Z",
+    "scheduled_arrival": "2026-11-19T08:15:00Z",
+    "initial_observations": [
+      {
+        "source": "airline-ops-feed",
+        "observed_at": "2026-11-19T04:00:00Z",
+        "valid_until": "2026-11-20T06:00:00Z",
+        "leg_id": "zx322-1119-out",
+        "field": "departure",
+        "value": null,
+        "authority_rank": 1,
+        "received_at": "2026-11-19T04:00:02Z",
+        "scheduled": "2026-11-19T07:15:00Z",
+        "estimated": "2026-11-19T07:15:00Z",
+        "actual": null,
+        "withdrawn": false,
+        "cutoff_estimated": false
+      },
+      {
+        "source": "gate-feed-a",
+        "observed_at": "2026-11-19T06:00:00Z",
+        "valid_until": "2026-11-20T06:00:00Z",
+        "leg_id": "zx322-1119-out",
+        "field": "gate",
+        "value": "B14",
+        "authority_rank": 1,
+        "received_at": "2026-11-19T06:00:00Z",
+        "scheduled": null,
+        "estimated": null,
+        "actual": null,
+        "withdrawn": false,
+        "cutoff_estimated": false
+      },
+      {
+        "source": "airline-ops-feed",
+        "observed_at": "2026-11-19T06:00:00Z",
+        "valid_until": "2026-11-20T06:00:00Z",
+        "leg_id": "zx322-1119-out",
+        "field": "boarding_cutoff",
+        "value": "2026-11-19T06:45:00Z",
+        "authority_rank": 1,
+        "received_at": "2026-11-19T06:00:00Z",
+        "scheduled": null,
+        "estimated": null,
+        "actual": null,
+        "withdrawn": false,
+        "cutoff_estimated": false
+      }
+    ]
+  },
+  {
+    "id": "zx118-1119-out",
+    "operating_carrier": "ZX",
+    "operating_number": "118",
+    "scheduled_operation_date": "2026-11-19",
+    "origin": "DXB",
+    "destination": "SHJ",
+    "aliases": [
+      "ZX118"
+    ],
+    "provider_leg_id": null,
+    "codeshare_aliases": [],
+    "scheduled_departure": "2026-11-19T06:20:00Z",
+    "scheduled_arrival": "2026-11-19T06:50:00Z",
+    "initial_observations": [
+      {
+        "source": "airline-ops-feed",
+        "observed_at": "2026-11-19T04:00:00Z",
+        "valid_until": "2026-11-20T06:00:00Z",
+        "leg_id": "zx118-1119-out",
+        "field": "departure",
+        "value": null,
+        "authority_rank": 1,
+        "received_at": "2026-11-19T04:00:02Z",
+        "scheduled": "2026-11-19T06:20:00Z",
+        "estimated": "2026-11-19T06:20:00Z",
+        "actual": null,
+        "withdrawn": false,
+        "cutoff_estimated": false
+      },
+      {
+        "source": "gate-feed-a",
+        "observed_at": "2026-11-19T06:00:00Z",
+        "valid_until": "2026-11-20T06:00:00Z",
+        "leg_id": "zx118-1119-out",
+        "field": "gate",
+        "value": "C12",
+        "authority_rank": 1,
+        "received_at": "2026-11-19T06:00:00Z",
+        "scheduled": null,
+        "estimated": null,
+        "actual": null,
+        "withdrawn": false,
+        "cutoff_estimated": false
+      },
+      {
+        "source": "airline-ops-feed",
+        "observed_at": "2026-11-19T06:00:00Z",
+        "valid_until": "2026-11-20T06:00:00Z",
+        "leg_id": "zx118-1119-out",
+        "field": "boarding_cutoff",
+        "value": "2026-11-19T06:08:00Z",
+        "authority_rank": 1,
+        "received_at": "2026-11-19T06:00:00Z",
+        "scheduled": null,
+        "estimated": null,
+        "actual": null,
+        "withdrawn": false,
+        "cutoff_estimated": false
+      }
+    ]
+  },
+  {
+    "id": "zx901-1119-out",
+    "operating_carrier": "ZX",
+    "operating_number": "901",
+    "scheduled_operation_date": "2026-11-19",
+    "origin": "DXB",
+    "destination": "DWC",
+    "aliases": [
+      "ZX901"
+    ],
+    "provider_leg_id": null,
+    "codeshare_aliases": [],
+    "scheduled_departure": "2026-11-19T10:00:00Z",
+    "scheduled_arrival": "2026-11-19T10:35:00Z",
+    "initial_observations": [
+      {
+        "source": "airline-ops-feed",
+        "observed_at": "2026-11-19T04:00:00Z",
+        "valid_until": "2026-11-20T06:00:00Z",
+        "leg_id": "zx901-1119-out",
+        "field": "departure",
+        "value": null,
+        "authority_rank": 1,
+        "received_at": "2026-11-19T04:00:02Z",
+        "scheduled": "2026-11-19T10:00:00Z",
+        "estimated": "2026-11-19T10:00:00Z",
+        "actual": null,
+        "withdrawn": false,
+        "cutoff_estimated": false
+      },
+      {
+        "source": "gate-feed-a",
+        "observed_at": "2026-11-19T06:00:00Z",
+        "valid_until": "2026-11-20T06:00:00Z",
+        "leg_id": "zx901-1119-out",
+        "field": "gate",
+        "value": "B14",
+        "authority_rank": 1,
+        "received_at": "2026-11-19T06:00:00Z",
+        "scheduled": null,
+        "estimated": null,
+        "actual": null,
+        "withdrawn": false,
+        "cutoff_estimated": false
+      }
+    ]
+  },
+  {
+    "id": "zx420-1119-out",
+    "operating_carrier": "ZX",
+    "operating_number": "420",
+    "scheduled_operation_date": "2026-11-19",
+    "origin": "DXB",
+    "destination": "AUH",
+    "aliases": [
+      "ZX420"
+    ],
+    "provider_leg_id": null,
+    "codeshare_aliases": [],
+    "scheduled_departure": "2026-11-19T07:25:00Z",
+    "scheduled_arrival": "2026-11-19T08:25:00Z",
+    "initial_observations": [
+      {
+        "source": "airline-ops-feed",
+        "observed_at": "2026-11-19T04:00:00Z",
+        "valid_until": "2026-11-20T06:00:00Z",
+        "leg_id": "zx420-1119-out",
+        "field": "departure",
+        "value": null,
+        "authority_rank": 1,
+        "received_at": "2026-11-19T04:00:02Z",
+        "scheduled": "2026-11-19T07:25:00Z",
+        "estimated": "2026-11-19T07:25:00Z",
+        "actual": null,
+        "withdrawn": false,
+        "cutoff_estimated": false
+      },
+      {
+        "source": "airline-ops-feed",
+        "observed_at": "2026-11-19T06:00:00Z",
+        "valid_until": "2026-11-20T06:00:00Z",
+        "leg_id": "zx420-1119-out",
+        "field": "boarding_cutoff",
+        "value": "2026-11-19T06:40:00Z",
+        "authority_rank": 1,
+        "received_at": "2026-11-19T06:00:00Z",
+        "scheduled": null,
+        "estimated": null,
+        "actual": null,
+        "withdrawn": false,
+        "cutoff_estimated": false
+      },
+      {
+        "source": "gate-feed-a",
+        "observed_at": "2026-11-19T03:00:00Z",
+        "valid_until": "2026-11-19T04:30:00Z",
+        "leg_id": "zx420-1119-out",
+        "field": "gate",
+        "value": "B16",
+        "authority_rank": 1,
+        "received_at": "2026-11-19T03:00:02Z",
+        "scheduled": null,
+        "estimated": null,
+        "actual": null,
+        "withdrawn": false,
+        "cutoff_estimated": false
+      }
+    ]
+  },
+  {
+    "id": "zx656-1119-out",
+    "operating_carrier": "ZX",
+    "operating_number": "656",
+    "scheduled_operation_date": "2026-11-19",
+    "origin": "DXB",
+    "destination": "DWC",
+    "aliases": [
+      "ZX656"
+    ],
+    "provider_leg_id": null,
+    "codeshare_aliases": [],
+    "scheduled_departure": "2026-11-19T08:10:00Z",
+    "scheduled_arrival": "2026-11-19T08:45:00Z",
+    "initial_observations": [
+      {
+        "source": "airline-ops-feed",
+        "observed_at": "2026-11-19T04:00:00Z",
+        "valid_until": "2026-11-20T06:00:00Z",
+        "leg_id": "zx656-1119-out",
+        "field": "departure",
+        "value": null,
+        "authority_rank": 1,
+        "received_at": "2026-11-19T04:00:02Z",
+        "scheduled": "2026-11-19T08:10:00Z",
+        "estimated": "2026-11-19T08:10:00Z",
+        "actual": null,
+        "withdrawn": false,
+        "cutoff_estimated": false
+      },
+      {
+        "source": "gate-feed-a",
+        "observed_at": "2026-11-19T06:00:00Z",
+        "valid_until": "2026-11-20T06:00:00Z",
+        "leg_id": "zx656-1119-out",
+        "field": "gate",
+        "value": "B14",
+        "authority_rank": 1,
+        "received_at": "2026-11-19T06:00:00Z",
+        "scheduled": null,
+        "estimated": null,
+        "actual": null,
+        "withdrawn": false,
+        "cutoff_estimated": false
+      },
+      {
+        "source": "airline-ops-feed",
+        "observed_at": "2026-11-19T06:00:00Z",
+        "valid_until": "2026-11-20T06:00:00Z",
+        "leg_id": "zx656-1119-out",
+        "field": "boarding_cutoff",
+        "value": "2026-11-19T07:35:00Z",
+        "authority_rank": 1,
+        "received_at": "2026-11-19T06:00:00Z",
+        "scheduled": null,
+        "estimated": null,
+        "actual": null,
+        "withdrawn": false,
+        "cutoff_estimated": false
+      }
+    ]
+  },
+  {
+    "id": "zx515-1120-out",
+    "operating_carrier": "ZX",
+    "operating_number": "515",
+    "scheduled_operation_date": "2026-11-20",
+    "origin": "DXB",
+    "destination": "AUH",
+    "aliases": [
+      "ZX515"
+    ],
+    "provider_leg_id": null,
+    "codeshare_aliases": [
+      "ZY515"
+    ],
+    "scheduled_departure": "2026-11-19T20:45:00Z",
+    "scheduled_arrival": "2026-11-19T21:45:00Z",
+    "initial_observations": [
+      {
+        "source": "airline-ops-feed",
+        "observed_at": "2026-11-19T04:00:00Z",
+        "valid_until": "2026-11-20T06:00:00Z",
+        "leg_id": "zx515-1120-out",
+        "field": "departure",
+        "value": null,
+        "authority_rank": 1,
+        "received_at": "2026-11-19T04:00:02Z",
+        "scheduled": "2026-11-19T20:45:00Z",
+        "estimated": "2026-11-19T20:45:00Z",
+        "actual": null,
+        "withdrawn": false,
+        "cutoff_estimated": false
+      },
+      {
+        "source": "gate-feed-a",
+        "observed_at": "2026-11-19T19:50:00Z",
+        "valid_until": "2026-11-20T06:00:00Z",
+        "leg_id": "zx515-1120-out",
+        "field": "gate",
+        "value": "B18",
+        "authority_rank": 1,
+        "received_at": "2026-11-19T19:50:00Z",
+        "scheduled": null,
+        "estimated": null,
+        "actual": null,
+        "withdrawn": false,
+        "cutoff_estimated": false
+      },
+      {
+        "source": "airline-ops-feed",
+        "observed_at": "2026-11-19T19:50:00Z",
+        "valid_until": "2026-11-20T06:00:00Z",
+        "leg_id": "zx515-1120-out",
+        "field": "boarding_cutoff",
+        "value": "2026-11-19T20:18:00Z",
+        "authority_rank": 1,
+        "received_at": "2026-11-19T19:50:00Z",
+        "scheduled": null,
+        "estimated": null,
+        "actual": null,
+        "withdrawn": false,
+        "cutoff_estimated": false
+      }
+    ]
+  },
+  {
+    "id": "zx777-1119-out",
+    "operating_carrier": "ZX",
+    "operating_number": "777",
+    "scheduled_operation_date": "2026-11-19",
+    "origin": "DXB",
+    "destination": "AUH",
+    "aliases": [
+      "ZX777"
+    ],
+    "provider_leg_id": null,
+    "codeshare_aliases": [],
+    "scheduled_departure": "2026-11-19T07:50:00Z",
+    "scheduled_arrival": "2026-11-19T08:50:00Z",
+    "initial_observations": [
+      {
+        "source": "airline-ops-feed",
+        "observed_at": "2026-11-19T04:00:00Z",
+        "valid_until": "2026-11-20T06:00:00Z",
+        "leg_id": "zx777-1119-out",
+        "field": "departure",
+        "value": null,
+        "authority_rank": 1,
+        "received_at": "2026-11-19T04:00:02Z",
+        "scheduled": "2026-11-19T07:50:00Z",
+        "estimated": "2026-11-19T07:50:00Z",
+        "actual": null,
+        "withdrawn": false,
+        "cutoff_estimated": false
+      },
+      {
+        "source": "gate-feed-a",
+        "observed_at": "2026-11-19T06:00:00Z",
+        "valid_until": "2026-11-20T06:00:00Z",
+        "leg_id": "zx777-1119-out",
+        "field": "gate",
+        "value": "B14",
+        "authority_rank": 1,
+        "received_at": "2026-11-19T06:00:00Z",
+        "scheduled": null,
+        "estimated": null,
+        "actual": null,
+        "withdrawn": false,
+        "cutoff_estimated": false
+      },
+      {
+        "source": "airline-ops-feed",
+        "observed_at": "2026-11-19T06:00:00Z",
+        "valid_until": "2026-11-20T06:00:00Z",
+        "leg_id": "zx777-1119-out",
+        "field": "boarding_cutoff",
+        "value": "2026-11-19T06:30:00Z",
+        "authority_rank": 1,
+        "received_at": "2026-11-19T06:00:00Z",
+        "scheduled": null,
+        "estimated": null,
+        "actual": null,
+        "withdrawn": false,
+        "cutoff_estimated": false
+      }
+    ]
+  }
+]

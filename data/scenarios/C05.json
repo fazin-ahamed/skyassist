@@ -1,0 +1,23 @@
+{
+  "id": "C05",
+  "expected_gate": "B14",
+  "expected_cutoff": null,
+  "clock_start": "C05",
+  "profile": "standard",
+  "party_needs": {
+    "party_size": 1
+  },
+  "event_sequence": [
+    "ev-c05-ready"
+  ],
+  "expected_route_node_ids": [
+    "b_hall",
+    "b14"
+  ],
+  "expected_transfer_lower_seconds": 480,
+  "expected_transfer_upper_seconds": 660,
+  "expected_status": "Timing unverified",
+  "expected_margin_seconds": null,
+  "allowed_outbound_effects": [],
+  "required_passenger_action": "check_gate"
+}

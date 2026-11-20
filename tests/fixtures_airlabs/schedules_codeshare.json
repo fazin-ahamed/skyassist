@@ -1,0 +1,31 @@
+[
+  {
+    "airline_iata": "BA",
+    "airline_icao": "BAW",
+    "flight_iata": "BA6984",
+    "flight_icao": "BAW6984",
+    "flight_number": "6984",
+    "cs_airline_iata": "AA",
+    "cs_flight_iata": "AA2421",
+    "cs_flight_number": "2421",
+    "dep_iata": "DXB",
+    "dep_icao": "OMDB",
+    "dep_terminal": "3",
+    "dep_gate": "C21",
+    "dep_time": "2026-11-19 10:00",
+    "dep_time_utc": "2026-11-19 06:00",
+    "dep_estimated": null,
+    "dep_estimated_utc": null,
+    "dep_actual": null,
+    "dep_actual_utc": null,
+    "arr_iata": "LHR",
+    "arr_icao": "EGLL",
+    "arr_terminal": null,
+    "arr_gate": null,
+    "arr_baggage": null,
+    "arr_time": "2026-11-19 14:30",
+    "arr_time_utc": "2026-11-19 10:30",
+    "status": "scheduled",
+    "duration": 390
+  }
+]

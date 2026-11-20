@@ -1,0 +1,137 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-11-20T12:00:00Z",
+  "title": "Design System: SkyAssist",
+  "extensions": {
+    "colorMeta": {
+      "belt": { "role": "neutral", "displayName": "Belt", "canonical": "oklch(0.925 0.009 270)", "tonalRamp": ["oklch(0.15 0.02 270)", "oklch(0.25 0.02 270)", "oklch(0.35 0.02 270)", "oklch(0.5 0.018 270)", "oklch(0.65 0.015 270)", "oklch(0.78 0.012 270)", "oklch(0.885 0.011 270)", "oklch(0.925 0.009 270)"] },
+      "tag-paper": { "role": "neutral", "displayName": "Tag Paper", "canonical": "oklch(0.996 0.002 270)", "tonalRamp": ["oklch(0.17 0.025 270)", "oklch(0.42 0.02 270)", "oklch(0.6 0.015 270)", "oklch(0.835 0.01 270)", "oklch(0.9 0.008 270)", "oklch(0.962 0.006 270)", "oklch(0.98 0.004 270)", "oklch(0.996 0.002 270)"] },
+      "tag-ink": { "role": "neutral", "displayName": "Ink", "canonical": "oklch(0.17 0.025 270)", "tonalRamp": ["oklch(0.17 0.025 270)", "oklch(0.25 0.025 270)", "oklch(0.33 0.022 270)", "oklch(0.42 0.02 270)", "oklch(0.52 0.018 270)", "oklch(0.62 0.015 270)", "oklch(0.75 0.012 270)", "oklch(0.835 0.01 270)"] },
+      "accent-600": { "role": "primary", "displayName": "Indigo Action", "canonical": "oklch(0.511 0.262 276.966)", "tonalRamp": ["oklch(0.257 0.09 281.288)", "oklch(0.359 0.144 278.697)", "oklch(0.457 0.24 277.023)", "oklch(0.511 0.262 276.966)", "oklch(0.585 0.233 277.117)", "oklch(0.673 0.182 276.935)", "oklch(0.785 0.115 274.713)", "oklch(0.962 0.018 272.314)"] },
+      "status-lime-text": { "role": "status", "displayName": "Lime (time available)", "canonical": "oklch(0.453 0.124 130.933)", "tonalRamp": ["oklch(0.453 0.124 130.933)", "oklch(0.55 0.15 130)", "oklch(0.65 0.18 128)", "oklch(0.75 0.18 126)", "oklch(0.83 0.16 125)", "oklch(0.9 0.14 124)", "oklch(0.938 0.127 124.321)", "oklch(0.97 0.07 124)"] },
+      "status-orange-text": { "role": "status", "displayName": "Orange (tight connection)", "canonical": "oklch(0.47 0.157 37.304)", "tonalRamp": ["oklch(0.47 0.157 37.304)", "oklch(0.56 0.18 40)", "oklch(0.66 0.19 45)", "oklch(0.75 0.17 55)", "oklch(0.83 0.12 62)", "oklch(0.88 0.09 68)", "oklch(0.901 0.076 70.697)", "oklch(0.96 0.04 75)"] },
+      "status-rose-text": { "role": "status", "displayName": "Rose (at risk)", "canonical": "oklch(0.455 0.188 13.697)", "tonalRamp": ["oklch(0.455 0.188 13.697)", "oklch(0.54 0.21 14)", "oklch(0.63 0.22 14)", "oklch(0.72 0.18 13)", "oklch(0.8 0.12 12)", "oklch(0.86 0.08 11)", "oklch(0.892 0.058 10.001)", "oklch(0.95 0.025 10)"] },
+      "status-blue-text": { "role": "status", "displayName": "Blue (timing unverified)", "canonical": "oklch(0.424 0.199 265.638)", "tonalRamp": ["oklch(0.424 0.199 265.638)", "oklch(0.5 0.22 265)", "oklch(0.58 0.22 262)", "oklch(0.68 0.18 260)", "oklch(0.77 0.13 257)", "oklch(0.84 0.08 255)", "oklch(0.882 0.059 254.128)", "oklch(0.95 0.025 254)"] }
+    },
+    "typographyMeta": {
+      "numeral-hero": { "displayName": "Numeral Hero", "purpose": "The gate on the first screen. Condensed 700, tabular, left to right." },
+      "numeral-xl": { "displayName": "Numeral XL", "purpose": "Cutoff time, minutes range, minutes left on the staff tag." },
+      "numeral-lg": { "displayName": "Numeral LG", "purpose": "Tag section titles, rack gates, margin minutes." },
+      "numeral-md": { "displayName": "Numeral MD", "purpose": "Minutes left in a rack row." },
+      "subtitle": { "displayName": "Subtitle", "purpose": "Flag status text and the agent state line." },
+      "body": { "displayName": "Body", "purpose": "Working size for labels, rows and receipt lines." },
+      "note": { "displayName": "Note", "purpose": "Pill text and watching-row source and time notes." }
+    },
+    "shadows": [
+      { "name": "contact", "value": "0 1px 0 oklch(0 0 0 / 0.05), 0 14px 14px -14px oklch(0 0 0 / 0.38)", "purpose": "The only shadow. A short contact line under a tag; no blur." }
+    ],
+    "motion": [
+      { "name": "print-in", "value": "0.55s cubic-bezier(0.22, 1, 0.36, 1) both", "purpose": "A new receipt line prints in with a clip reveal and 10px slide; staggered 70ms up to 7 rows." },
+      { "name": "watch-ping", "value": "2.4s cubic-bezier(0.22, 1, 0.36, 1) infinite", "purpose": "Heartbeat on the watching dot, scale 0.7 to 2.4, fading out." },
+      { "name": "button-press", "value": "transform 420ms cubic-bezier(0.4, 0, 0.2, 1); colours 150ms ease; active scale 0.98", "purpose": "BoardUI button press feedback." },
+      { "name": "reduced-motion", "value": "prefers-reduced-motion: reduce", "purpose": "print-in and watch-ping are removed; all other animation and transition durations clamp to 0.01ms." }
+    ],
+    "breakpoints": [
+      { "name": "sm", "value": "40rem" },
+      { "name": "lg", "value": "64rem" }
+    ]
+  },
+  "components": [
+    {
+      "name": "Tag",
+      "kind": "card",
+      "refersTo": "tag",
+      "description": "Paper white 14px tag with hairline and one contact shadow; sections divided by tears.",
+      "html": "<section class=\"ds-tag\"><p class=\"ds-label\">Gate</p><p class=\"ds-numeral\">B24</p><div class=\"ds-tear\"></div><p class=\"ds-body\">Last verified 14:32, airport feed</p></section>",
+      "css": ".ds-tag { position: relative; width: 320px; padding: 24px 0; background: oklch(0.996 0.002 270); color: oklch(0.17 0.025 270); border: 1px solid oklch(0.835 0.01 270); border-radius: 14px; box-shadow: 0 1px 0 oklch(0 0 0 / 0.05), 0 14px 14px -14px oklch(0 0 0 / 0.38); font-family: Barlow, system-ui, sans-serif; } .ds-tag > p { padding: 0 24px; margin: 0; } .ds-label { font-size: 14px; font-weight: 600; color: oklch(0.42 0.02 270); } .ds-numeral { font-family: 'Barlow Condensed', system-ui, sans-serif; font-weight: 700; font-size: 88px !important; line-height: 0.84; letter-spacing: -0.012em; font-variant-numeric: tabular-nums; } .ds-body { font-size: 14px; line-height: 20px; color: oklch(0.42 0.02 270); } .ds-tear { position: relative; height: 0; margin: 20px 0; border-top: 2px dashed oklch(0.835 0.01 270); }"
+    },
+    {
+      "name": "Status Flag",
+      "kind": "custom",
+      "refersTo": "status-pill-orange",
+      "description": "Status tone band or tab on top of a tag; the only place a status is named in full.",
+      "html": "<span class=\"ds-flag\">Tight connection</span>",
+      "css": ".ds-flag { display: inline-flex; align-items: center; padding: 8px 16px 10px; border-radius: 0 0 12px 12px; background: oklch(0.901 0.076 70.697); color: oklch(0.47 0.157 37.304); font: 600 18px/26px Barlow, system-ui, sans-serif; }"
+    },
+    {
+      "name": "Primary Button",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "The single indigo action on a tag, 56px high, 8px corners.",
+      "html": "<button class=\"ds-btn-primary\">Take me there</button>",
+      "css": ".ds-btn-primary { height: 56px; padding: 0 24px; border: 0; border-radius: 8px; background-image: linear-gradient(180deg, oklch(0.585 0.233 277.117), oklch(0.511 0.262 276.966)); color: #fff; font: 600 18px Barlow, system-ui, sans-serif; cursor: pointer; transition: filter 150ms ease, transform 420ms cubic-bezier(0.4, 0, 0.2, 1); } .ds-btn-primary:hover { filter: brightness(1.1); } .ds-btn-primary:active { transform: scale(0.98); } .ds-btn-primary:focus-visible { outline: 2px solid oklch(0.585 0.233 277.117); outline-offset: 2px; }"
+    },
+    {
+      "name": "Quick Question Button",
+      "kind": "button",
+      "refersTo": "button-secondary",
+      "description": "Secondary 40px control in the agent rail; answered only from server fields.",
+      "html": "<button class=\"ds-btn-secondary\">When do I board</button>",
+      "css": ".ds-btn-secondary { height: 40px; padding: 0 14px; border: 1px solid oklch(0.835 0.01 270); border-radius: 8px; background: oklch(0.996 0.002 270); color: oklch(0.17 0.025 270); font: 600 14px Barlow, system-ui, sans-serif; cursor: pointer; } .ds-btn-secondary:hover { background: oklch(0.962 0.006 270); } .ds-btn-secondary:focus-visible { outline: 2px solid oklch(0.585 0.233 277.117); outline-offset: 2px; }"
+    },
+    {
+      "name": "Case State Pills",
+      "kind": "chip",
+      "refersTo": "pill-accent",
+      "description": "Case and assistance state use the accent pill or the neutral pill, never a status tone.",
+      "html": "<span class=\"ds-pill ds-pill-accent\">Waiting for staff</span> <span class=\"ds-pill ds-pill-neutral\">Closed</span>",
+      "css": ".ds-pill { display: inline-flex; align-items: center; padding: 4px 12px; border-radius: 8px; font: 600 13px/18px Barlow, system-ui, sans-serif; } .ds-pill-accent { background: oklch(0.962 0.018 272.314); color: oklch(0.398 0.195 277.366); } .ds-pill-neutral { background: oklch(0.962 0.006 270); color: oklch(0.17 0.025 270); }"
+    },
+    {
+      "name": "Receipt",
+      "kind": "custom",
+      "refersTo": "receipt",
+      "description": "The agent's printed log: narrow paper, zigzag foot, newest line on top, dashed row dividers.",
+      "html": "<section class=\"ds-receipt\"><h2>Activity</h2><ol><li><time>14:32</time><p>Gate changed to B24</p></li><li><time>14:10</time><p>Checked gate and cutoff</p></li></ol></section>",
+      "css": ".ds-receipt { width: 300px; padding: 12px 16px 24px; background: oklch(0.996 0.002 270); color: oklch(0.17 0.025 270); border: 1px solid oklch(0.835 0.01 270); border-bottom: 0; border-radius: 14px 14px 0 0; font-family: Barlow, system-ui, sans-serif; -webkit-mask: linear-gradient(#000 0 0) top / 100% calc(100% - 9px) no-repeat, conic-gradient(from -45deg at bottom, #0000, #000 1deg 89deg, #0000 90deg) bottom / 18px 9px repeat-x; mask: linear-gradient(#000 0 0) top / 100% calc(100% - 9px) no-repeat, conic-gradient(from -45deg at bottom, #0000, #000 1deg 89deg, #0000 90deg) bottom / 18px 9px repeat-x; } .ds-receipt h2 { margin: 0 4px 4px; font-size: 14px; font-weight: 600; color: oklch(0.42 0.02 270); } .ds-receipt ol { margin: 0; padding: 0; list-style: none; } .ds-receipt li { display: flex; gap: 12px; padding: 12px 0; border-bottom: 1px dashed oklch(0.835 0.01 270); } .ds-receipt li:last-child { border-bottom: 0; } .ds-receipt time { width: 44px; font: 500 14px Barlow, system-ui, sans-serif; font-variant-numeric: tabular-nums; color: oklch(0.42 0.02 270); } .ds-receipt p { margin: 0; font-size: 14px; font-weight: 600; }"
+    },
+    {
+      "name": "Watching Row",
+      "kind": "custom",
+      "refersTo": "tag",
+      "description": "A fact the agent watches: health dot, label, value, and a note with source and verification time.",
+      "html": "<div class=\"ds-watch\"><span class=\"ds-dot\"></span><span class=\"ds-wl\">Gate</span><span><strong>B24</strong><br><small>Verified 14:32, airport feed</small></span></div>",
+      "css": ".ds-watch { display: flex; align-items: center; gap: 12px; padding: 8px 4px; font-family: Barlow, system-ui, sans-serif; color: oklch(0.17 0.025 270); border-bottom: 1px dashed oklch(0.835 0.01 270); } .ds-dot { width: 10px; height: 10px; border-radius: 9999px; background: oklch(0.453 0.124 130.933); } .ds-wl { width: 112px; font-size: 14px; font-weight: 500; color: oklch(0.42 0.02 270); } .ds-watch strong { font-size: 14px; font-weight: 600; font-variant-numeric: tabular-nums; } .ds-watch small { font-size: 13px; font-weight: 500; color: oklch(0.42 0.02 270); }"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Baggage Tag on the Belt",
+    "overview": "SkyAssist is one paper tag laid on a conveyor belt. The tag carries the facts a traveller needs (gate, cutoff, minutes of margin) as big condensed numerals; the belt is the flat ground behind it. The agent is not a chat window. It is a printer beside the tag: a state line, a list of what it is watching, and a receipt that prints a new line only when something changed. The coordinator console is the same world seen from the staff side: a cutoff lane, a rack of tags, and the open case as a full tag with its actions on the stub.\n\nThe ground flips with the theme while paper stays paper white in both, so a tag looks like the same object in a bright hall and a dim one. Colour is scarce and assigned: indigo is the one action and brand colour; four status tones mean connection status and nothing else. Depth is stacking, perforation and one short contact shadow, never blur.\n\nThe system is built on BoardUI semantic tokens with its accent ramp re-pointed to indigo and its font wired to Barlow. Tags opt back into the light token set through the .paper scope, so every stock control inside a tag stays light in dark mode.",
+    "keyCharacteristics": [
+      "Flat belt ground with faint 80px vertical slat lines; paper tags and receipts on top.",
+      "Gate, time and range numerals in Barlow Condensed 700, tabular, always left to right.",
+      "Indigo is the only action colour; lime, orange, rose and blue are connection status only.",
+      "One short contact shadow plus a hairline rule; no blur, no glow, no gradients on surfaces.",
+      "Perforated tear lines with notches, punch holes, a zigzag receipt foot, and a status flag as the only ornament, each carrying structure.",
+      "Staff console is English only. Arabic mirrors the layout with numerals kept LTR and is unreviewed.",
+      "The SkyAssist logo is a custom SVG and is not part of this system's tokens; leave it unchanged."
+    ],
+    "rules": [
+      { "name": "The Paper Stays Paper Rule", "body": "Tags and receipts are paper white in both themes. Only the belt flips. Any new surface that holds content is a .paper tag, so BoardUI controls inside it resolve to their light tokens.", "section": "colors" },
+      { "name": "The Tones Are Status Rule", "body": "Lime, orange, rose and blue mean connection status and nothing else. Never use them for decoration, categories, or case and assistance state.", "section": "colors" },
+      { "name": "The One Action Colour Rule", "body": "Indigo is the only brand and action colour. Do not introduce a second accent.", "section": "colors" },
+      { "name": "The Numerals Read Left to Right Rule", "body": "Every gate, time and range numeral is Barlow Condensed, tabular, and wrapped in dir=\"ltr\" (or bdi dir=\"ltr\"), including in Arabic.", "section": "typography" },
+      { "name": "The Condensed Is For Facts Rule", "body": "Barlow Condensed appears only on numerals that carry facts. Never set prose or buttons in it.", "section": "typography" },
+      { "name": "The Contact Shadow Only Rule", "body": "No shadow beyond the tag's contact shadow. No blur, glow, backdrop filters or stacked ambient layers on any surface.", "section": "elevation" },
+      { "name": "The Receipt Prints Only What Changed Rule", "body": "The receipt gains a line only when something changed; unchanged facts stay in the Watching list, each with source and verification time.", "section": "components" }
+    ],
+    "dos": [
+      "Do put every content surface on a .paper tag or receipt, so it stays paper white in dark mode.",
+      "Do set gate, time and range as Barlow Condensed numerals, tabular, in an LTR wrapper.",
+      "Do carry source and verification time on every fact the agent shows.",
+      "Do print only what changed on the receipt; keep unchanged facts in the Watching list.",
+      "Do use indigo for action and brand, and the accent or neutral pill for case and assistance state.",
+      "Do separate sections inside a tag with a tear and divide list rows with a dashed tag-rule line.",
+      "Do keep the staff console in English and mirror the kiosk layout with logical properties in Arabic."
+    ],
+    "donts": [
+      "Don't use lime, orange, rose or blue for anything except connection status.",
+      "Don't add shadows beyond the contact shadow, or any blur, glow or backdrop filter.",
+      "Don't flip tags to dark in dark mode; only the belt flips.",
+      "Don't set prose or buttons in Barlow Condensed.",
+      "Don't interrupt the traveller with anything but a question slip or a change slip.",
+      "Don't answer quick questions from anything but server fields.",
+      "Don't redraw or recolour the SkyAssist logo."
+    ]
+  }
+}

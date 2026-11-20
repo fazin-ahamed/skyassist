@@ -1,0 +1,25 @@
+{
+  "id": "C07",
+  "expected_gate": "B14",
+  "expected_cutoff": "2026-11-19T06:45:00Z",
+  "clock_start": "C07",
+  "profile": "standard",
+  "party_needs": {
+    "party_size": 1
+  },
+  "event_sequence": [
+    "ev-c07-ready",
+    "ev-c07-costa",
+    "ev-c07-confirm"
+  ],
+  "expected_route_node_ids": [
+    "b_costa",
+    "b14"
+  ],
+  "expected_transfer_lower_seconds": 240,
+  "expected_transfer_upper_seconds": 270,
+  "expected_status": "Time available",
+  "expected_margin_seconds": 2400,
+  "allowed_outbound_effects": [],
+  "required_passenger_action": "follow_route"
+}

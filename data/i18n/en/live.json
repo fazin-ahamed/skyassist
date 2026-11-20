@@ -1,0 +1,21 @@
+{
+  "_review": "source",
+  "answer.clock": "It is {time} in Dubai on {date}.",
+  "answer.clock_unknown": "I cannot read the airport clock right now.",
+  "live.step.understand": "Understanding your question",
+  "live.step.read.gate": "Reading your gate",
+  "live.step.read.map": "Checking the plan",
+  "live.step.read.route": "Reading your route",
+  "live.step.read.ledger": "Reading what is verified",
+  "live.step.read.assist": "Checking your requests",
+  "live.step.clock": "Reading the airport clock",
+  "live.step.search": "Searching the web",
+  "live.step.draft": "Writing the answer",
+  "live.step.check": "Checking every claim",
+  "live.step.refused": "Refused a claim, rewriting",
+  "live.sources": "Sources",
+  "kk.pick_schedule": "I could not match that to today's schedule. Pick your flight:",
+  "answer.flight_oag": "{flight} from {origin} to {destination}: scheduled {time}, status {status}. Source: OAG.",
+  "answer.flight_unknown": "I could not find that flight in the schedule data. Check the flight number and try again.",
+  "kk.busy": "I am still working on your last message. One moment."
+}

@@ -1,0 +1,5 @@
+[lang="ar"] body, [lang="ar"] { font-family: var(--font-arabic), var(--font-barlow), system-ui, sans-serif; }
+.tabular { font-variant-numeric: tabular-nums; }
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation-duration: 0.01ms !important; transition-duration: 0.01ms !important; }
+}

@@ -1,0 +1,488 @@
+[
+  {
+    "id": "ev-c01-lift-closed",
+    "timestamp": "2026-11-19T05:40:00Z",
+    "event_type": "facility_changed",
+    "payload": {
+      "id": "ov-c01-lift-closed",
+      "airport": "DXB",
+      "edge_id": "e_lift_c_train_c",
+      "closed": true,
+      "accessible": false,
+      "source": "facility-ops",
+      "observed_at": "2026-11-19T05:40:00Z",
+      "valid_until": "2026-11-19T12:00:00Z"
+    }
+  },
+  {
+    "id": "ev-c01-lift-open",
+    "timestamp": "2026-11-19T05:50:00Z",
+    "event_type": "facility_changed",
+    "payload": {
+      "id": "ov-c01-lift-open",
+      "airport": "DXB",
+      "edge_id": "e_lift_c_train_c",
+      "closed": false,
+      "accessible": true,
+      "source": "facility-ops",
+      "observed_at": "2026-11-19T05:50:00Z",
+      "valid_until": "2026-11-19T12:00:00Z"
+    }
+  },
+  {
+    "id": "ev-c01-ready",
+    "timestamp": "2026-11-19T05:55:00Z",
+    "event_type": "flight_updated",
+    "payload": {
+      "leg_id": "dx402-1119-in",
+      "state": "staff_handoff_pending",
+      "ready": {
+        "lower": 240,
+        "upper": 360
+      },
+      "source": "crew-report",
+      "observed_at": "2026-11-19T05:55:00Z"
+    }
+  },
+  {
+    "id": "ev-c01-gate-b14",
+    "timestamp": "2026-11-19T05:59:55Z",
+    "event_type": "gate_changed",
+    "payload": {
+      "source": "ops-desk",
+      "observed_at": "2026-11-19T05:59:55Z",
+      "valid_until": "2026-11-20T06:00:00Z",
+      "leg_id": "zx515-1119-out",
+      "field": "gate",
+      "value": "B14",
+      "authority_rank": 2,
+      "received_at": "2026-11-19T05:59:55Z",
+      "scheduled": null,
+      "estimated": null,
+      "actual": null,
+      "withdrawn": false,
+      "cutoff_estimated": false
+    }
+  },
+  {
+    "id": "ev-c01-assist",
+    "timestamp": "2026-11-19T06:00:00Z",
+    "event_type": "passenger_input",
+    "payload": {
+      "journey_id": "j-c01",
+      "client_input_id": "c01-in-1",
+      "intent": "request_assistance",
+      "text": "Wheelchair handoff to my connection, please",
+      "flight_aliases": [
+        "DXB-402"
+      ],
+      "confirmed_origin_id": "c22",
+      "party_needs": {
+        "party_size": 3,
+        "children": 1,
+        "step_free": true,
+        "wheelchair": true
+      }
+    }
+  },
+  {
+    "id": "ev-c01-approve",
+    "timestamp": "2026-11-19T06:01:00Z",
+    "event_type": "coordinator_decided",
+    "payload": {
+      "event_id": "ev-c01-approve",
+      "case_id": "case-c01",
+      "request_revision": 1,
+      "decision": "approve",
+      "reason_code": null
+    }
+  },
+  {
+    "id": "ev-c01-dispatched",
+    "timestamp": "2026-11-19T06:01:15Z",
+    "event_type": "dispatch_status",
+    "payload": {
+      "event_id": "ev-c01-dispatched",
+      "case_id": "case-c01",
+      "request_revision": 1,
+      "status": "dispatched",
+      "evidence": {
+        "source": "dispatch-sim",
+        "observed_at": "2026-11-19T06:01:15Z"
+      },
+      "provider_ref": "sim-dispatch-c01",
+      "eta": null
+    }
+  },
+  {
+    "id": "ev-c02-ready",
+    "timestamp": "2026-11-19T05:55:00Z",
+    "event_type": "flight_updated",
+    "payload": {
+      "leg_id": "zx502-1119-in",
+      "state": "doors_open",
+      "ready": {
+        "lower": 60,
+        "upper": 120
+      },
+      "source": "crew-report",
+      "observed_at": "2026-11-19T05:55:00Z"
+    }
+  },
+  {
+    "id": "ev-c02-gate-b18",
+    "timestamp": "2026-11-19T06:00:00Z",
+    "event_type": "gate_changed",
+    "payload": {
+      "source": "ops-desk",
+      "observed_at": "2026-11-19T06:00:00Z",
+      "valid_until": "2026-11-20T06:00:00Z",
+      "leg_id": "zx730-1119-out",
+      "field": "gate",
+      "value": "B18",
+      "authority_rank": 2,
+      "received_at": "2026-11-19T06:00:00Z",
+      "scheduled": null,
+      "estimated": null,
+      "actual": null,
+      "withdrawn": false,
+      "cutoff_estimated": false
+    }
+  },
+  {
+    "id": "ev-c02-refresh",
+    "timestamp": "2026-11-19T06:00:00Z",
+    "event_type": "refresh_due",
+    "payload": null
+  },
+  {
+    "id": "ev-c03-ready",
+    "timestamp": "2026-11-19T05:55:00Z",
+    "event_type": "flight_updated",
+    "payload": {
+      "leg_id": "zx503-1119-in",
+      "state": "ready_to_move",
+      "ready": {
+        "lower": 0,
+        "upper": 0
+      },
+      "source": "crew-report",
+      "observed_at": "2026-11-19T05:55:00Z"
+    }
+  },
+  {
+    "id": "ev-c04-ready",
+    "timestamp": "2026-11-19T05:55:00Z",
+    "event_type": "flight_updated",
+    "payload": {
+      "leg_id": "zx504-1119-in",
+      "state": "ready_to_move",
+      "ready": {
+        "lower": 0,
+        "upper": 0
+      },
+      "source": "crew-report",
+      "observed_at": "2026-11-19T05:55:00Z"
+    }
+  },
+  {
+    "id": "ev-c05-ready",
+    "timestamp": "2026-11-19T05:55:00Z",
+    "event_type": "flight_updated",
+    "payload": {
+      "leg_id": "zx505-1119-in",
+      "state": "ready_to_move",
+      "ready": {
+        "lower": 0,
+        "upper": 0
+      },
+      "source": "crew-report",
+      "observed_at": "2026-11-19T05:55:00Z"
+    }
+  },
+  {
+    "id": "ev-c06-ready",
+    "timestamp": "2026-11-19T05:55:00Z",
+    "event_type": "flight_updated",
+    "payload": {
+      "leg_id": "zx506-1119-in",
+      "state": "ready_to_move",
+      "ready": {
+        "lower": 0,
+        "upper": 0
+      },
+      "source": "crew-report",
+      "observed_at": "2026-11-19T05:55:00Z"
+    }
+  },
+  {
+    "id": "ev-c06-conflict-a",
+    "timestamp": "2026-11-19T06:00:05Z",
+    "event_type": "gate_changed",
+    "payload": {
+      "source": "gate-feed-a",
+      "observed_at": "2026-11-19T06:00:05Z",
+      "valid_until": "2026-11-20T06:00:00Z",
+      "leg_id": "zx420-1119-out",
+      "field": "gate",
+      "value": "B14",
+      "authority_rank": 1,
+      "received_at": "2026-11-19T06:00:05Z",
+      "scheduled": null,
+      "estimated": null,
+      "actual": null,
+      "withdrawn": false,
+      "cutoff_estimated": false
+    }
+  },
+  {
+    "id": "ev-c06-conflict-b",
+    "timestamp": "2026-11-19T06:00:06Z",
+    "event_type": "gate_changed",
+    "payload": {
+      "source": "gate-feed-b",
+      "observed_at": "2026-11-19T06:00:06Z",
+      "valid_until": "2026-11-20T06:00:00Z",
+      "leg_id": "zx420-1119-out",
+      "field": "gate",
+      "value": "B18",
+      "authority_rank": 1,
+      "received_at": "2026-11-19T06:00:06Z",
+      "scheduled": null,
+      "estimated": null,
+      "actual": null,
+      "withdrawn": false,
+      "cutoff_estimated": false
+    }
+  },
+  {
+    "id": "ev-c06-resolve",
+    "timestamp": "2026-11-19T06:00:40Z",
+    "event_type": "gate_changed",
+    "payload": {
+      "source": "ops-desk",
+      "observed_at": "2026-11-19T06:00:40Z",
+      "valid_until": "2026-11-20T06:00:00Z",
+      "leg_id": "zx420-1119-out",
+      "field": "gate",
+      "value": "B18",
+      "authority_rank": 2,
+      "received_at": "2026-11-19T06:00:40Z",
+      "scheduled": null,
+      "estimated": null,
+      "actual": null,
+      "withdrawn": false,
+      "cutoff_estimated": false
+    }
+  },
+  {
+    "id": "ev-c07-ready",
+    "timestamp": "2026-11-19T05:55:00Z",
+    "event_type": "flight_updated",
+    "payload": {
+      "leg_id": "zx507-1119-in",
+      "state": "ready_to_move",
+      "ready": {
+        "lower": 0,
+        "upper": 0
+      },
+      "source": "crew-report",
+      "observed_at": "2026-11-19T05:55:00Z"
+    }
+  },
+  {
+    "id": "ev-c07-costa",
+    "timestamp": "2026-11-19T06:00:05Z",
+    "event_type": "passenger_input",
+    "payload": {
+      "journey_id": "j-c07",
+      "client_input_id": "c07-in-1",
+      "intent": "check_connection",
+      "text": "Costa",
+      "landmark_text": "Costa"
+    }
+  },
+  {
+    "id": "ev-c07-confirm",
+    "timestamp": "2026-11-19T06:00:30Z",
+    "event_type": "passenger_input",
+    "payload": {
+      "journey_id": "j-c07",
+      "client_input_id": "c07-in-2",
+      "intent": "check_connection",
+      "landmark_text": "Costa",
+      "confirmed_origin_id": "b_costa"
+    }
+  },
+  {
+    "id": "ev-c08-ready",
+    "timestamp": "2026-11-19T05:55:00Z",
+    "event_type": "flight_updated",
+    "payload": {
+      "leg_id": "zx508-1119-in",
+      "state": "parked",
+      "ready": {
+        "lower": 0,
+        "upper": 0
+      },
+      "source": "crew-report",
+      "observed_at": "2026-11-19T05:55:00Z"
+    }
+  },
+  {
+    "id": "ev-c08-corridor-closed",
+    "timestamp": "2026-11-19T05:56:00Z",
+    "event_type": "facility_changed",
+    "payload": {
+      "id": "ov-c08-corridor-closed",
+      "airport": "DXB",
+      "edge_id": "e_c22_c_walk",
+      "closed": true,
+      "source": "facility-ops",
+      "observed_at": "2026-11-19T05:56:00Z",
+      "valid_until": "2026-11-19T12:00:00Z"
+    }
+  },
+  {
+    "id": "ev-c08-lift-closed",
+    "timestamp": "2026-11-19T06:00:10Z",
+    "event_type": "facility_changed",
+    "payload": {
+      "id": "ov-c08-lift-closed",
+      "airport": "DXB",
+      "edge_id": "e_lift_c_train_c",
+      "closed": true,
+      "accessible": false,
+      "source": "facility-ops",
+      "observed_at": "2026-11-19T06:00:10Z",
+      "valid_until": "2026-11-19T12:00:00Z"
+    }
+  },
+  {
+    "id": "ev-c09-ready",
+    "timestamp": "2026-11-19T19:40:00Z",
+    "event_type": "flight_updated",
+    "payload": {
+      "leg_id": "zx509-1119-in",
+      "state": "parked",
+      "ready": {
+        "lower": 300,
+        "upper": 510
+      },
+      "source": "crew-report",
+      "observed_at": "2026-11-19T19:40:00Z"
+    }
+  },
+  {
+    "id": "ev-c09-input",
+    "timestamp": "2026-11-19T19:50:00Z",
+    "event_type": "passenger_input",
+    "payload": {
+      "journey_id": "j-c09",
+      "client_input_id": "c09-in-1",
+      "intent": "check_connection",
+      "text": "Is ZY515 still possible tonight?",
+      "flight_aliases": [
+        "ZY515"
+      ]
+    }
+  },
+  {
+    "id": "ev-c09-date",
+    "timestamp": "2026-11-19T19:50:00Z",
+    "event_type": "passenger_input",
+    "payload": {
+      "journey_id": "j-c09",
+      "client_input_id": "c09-in-2",
+      "intent": "check_connection",
+      "flight_aliases": [
+        "ZY515"
+      ],
+      "operation_date": "2026-11-20"
+    }
+  },
+  {
+    "id": "ev-c10-queue-stale",
+    "timestamp": "2026-11-19T04:00:00Z",
+    "event_type": "facility_changed",
+    "payload": {
+      "airport": "DXB",
+      "queue_id": "q_transfer",
+      "flow": "connecting",
+      "wait": {
+        "lower": 60,
+        "upper": 180
+      },
+      "source": "checkpoint-feed-c",
+      "observed_at": "2026-11-19T04:00:00Z",
+      "valid_until": "2026-11-19T05:30:00Z"
+    }
+  },
+  {
+    "id": "ev-c10-ready",
+    "timestamp": "2026-11-19T05:55:00Z",
+    "event_type": "flight_updated",
+    "payload": {
+      "leg_id": "zx510-1119-in",
+      "state": "ready_to_move",
+      "ready": {
+        "lower": 0,
+        "upper": 0
+      },
+      "source": "crew-report",
+      "observed_at": "2026-11-19T05:55:00Z"
+    }
+  },
+  {
+    "id": "ev-c08-lift-reopen",
+    "timestamp": "2026-11-19T06:00:25Z",
+    "event_type": "facility_changed",
+    "payload": {
+      "id": "ov-c08-lift-reopen",
+      "airport": "DXB",
+      "edge_id": "e_lift_c_train_c",
+      "closed": false,
+      "accessible": true,
+      "source": "facility-ops",
+      "observed_at": "2026-11-19T06:00:25Z",
+      "valid_until": "2026-11-19T12:00:00Z"
+    }
+  },
+  {
+    "id": "ev-c10-queue-fresh",
+    "timestamp": "2026-11-19T06:00:30Z",
+    "event_type": "facility_changed",
+    "payload": {
+      "airport": "DXB",
+      "queue_id": "q_transfer",
+      "flow": "connecting",
+      "wait": {
+        "lower": 60,
+        "upper": 120
+      },
+      "source": "checkpoint-feed-c",
+      "observed_at": "2026-11-19T06:00:30Z",
+      "valid_until": "2026-11-19T12:00:00Z"
+    }
+  },
+  {
+    "id": "ev-c01-gate-a3",
+    "timestamp": "2026-11-19T06:00:30Z",
+    "event_type": "gate_changed",
+    "payload": {
+      "source": "ops-desk",
+      "observed_at": "2026-11-19T06:00:30Z",
+      "valid_until": "2026-11-20T06:00:00Z",
+      "leg_id": "zx515-1119-out",
+      "field": "gate",
+      "value": "A3",
+      "authority_rank": 3,
+      "received_at": "2026-11-19T06:00:30Z",
+      "scheduled": null,
+      "estimated": null,
+      "actual": null,
+      "withdrawn": false,
+      "cutoff_estimated": false
+    }
+  }
+]
